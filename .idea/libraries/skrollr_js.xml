@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="skrollr.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file:///Applications/skrollr_js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file:///Applications/skrollr_js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

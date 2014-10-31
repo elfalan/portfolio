@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/style.css' %}" />
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jesse M. Elfalan</title>
+
+
+</head>
+
+<body>
+
+
+
+<div class="debug">
+    <label><input type="checkbox"> Debug</label>
+    </div>
+
+
+<div class="header-cont">
+    <div class="name_header"><div class="text" style="left: 20%">Jesse M Elfalan |</div></div>
+    <header>
+    <div class="nav">
+        <ul>
+            <li><a href="#group2" data-menu-top="500">About</a></li>
+         <li><a href="#group3">Projects</a></li>
+         <li><a href="#group4">Talents</a></li>
+         <li><a href="#group5">Contact</a></li>
+
+        </ul>
+    </div>
+</header>
+    </div>
+
+
+
+
+
+
+ <div class="parallax">
+{#     Group1 - Welcome #}
+
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base"></div>
+
+        <div>
+        <div class="parallax__layer parallax__layer--fore">
+        <div class="text"><div id="ekomomai"></div></div>
+        </div>
+
+      <div class="parallax__layer parallax__layer--fore">
+      <div id="welcome"></div>
+       </div>
+
+       </div>
+        <div class="parallax__layer parallax__layer--fore">
+            <div id="greeting_box"><strong>Please scroll down</strong></div></div>
+      </div>
+
+{#  Group2 - Introduction #}
+
+    <div id="group2" class="parallax__group">
+
+      <div class="parallax__layer parallax__layer--base">
+{#        <div class="text">Base Layer</div>#}
+          <div class="text" id="intro_box">
+              <article>
+          <p id="aloha_text"><strong>Aloha!</strong></p>
+                  <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
+                  <br>
+                  I was born and raised in Hawaiian Islands, but recently moved to the<br>
+                  <strong>San Francisco Bay Area</strong>.<br>
+                  <br>
+                  My areas of interests are <strong>Application Development</strong> and <strong>Web Design</strong>,<br>
+                  however I do possess a broad range of other skills.<br>
+                  <br>
+                  Please feel free to peruse this site to find out what else I am capable of.
+                  <br>
+                  Mahalo!
+
+                  </p>
+          </article>
+          </div>
+      </div>
+        <div class="parallax__layer parallax__layer--back">
+{#        <div class="text">Background Layer</div>#}
+      </div>
+    </div>
+
+{#     Group3 - projects  #}
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+{#        <div class="text">Foreground Layer</div>#}
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="text" id="project_box">
+            <article>
+            <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number<br>
+               technologies and languages. Some of these include:<br>
+               <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
+               <br>
+               I also enjoy exploring other languages and I am currently learning <br>
+               the <strong>Django/Python</strong> framework, and built this site as practice using this platform!<br>
+                <br>
+                <strong>Please scroll to the right or click on the tabs to find out more about my projects.</strong>
+               </p>
+                </article>
+        </div>
+      </div>
+    </div>
+
+{#     Group4 - Talents  #}
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="text" id="talent_box">
+            <article>
+                <p>Aside from writing code, I also enjoy learning and exploring new things <br>
+                  which help stimulate my creative side.<br>
+                <br>
+                Not to brag but, I've been told I make a pretty killer beer!
+                <p>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+{#        <div class="text">Background Layer</div>#}
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+{#        <div class="text">Deep Background Layer</div>#}
+      </div>
+    </div>
+
+{#     Group5 - Contact  #}
+    <div id="group5" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="text">Foreground Layer</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="text">Base Layer</div>
+      </div>
+    </div>
+
+{#     Group6   #}
+    <div id="group6" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="text">Background Layer</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="text">Base Layer</div>
+      </div>
+    </div>
+
+{#     Group7   #}
+    <div id="group7" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="text">Base Layer</div>
+      </div>
+    </div>
+  </div>
+
+
+ <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+
+  <!--
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10812217-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+-->
+{#<script>#}
+{#(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){#}
+{#(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),#}
+{#m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)#}
+{#})(window,document,'script','//www.google-analytics.com/analytics.js','ga');#}
+{#ga('create', 'UA-10812217-1', 'auto');#}
+{#ga('send', 'pageview');#}
+{#</script>#}
+
+
+   <script src="{% static 'professional_portfolio/js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'professional_portfolio/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'professional_portfolio/js/skrollr.min.js' %}"></script>
+    <script src="{% static 'professional_portfolio/js/skrollr.menu.min.js' %}"></script>
+    <script src="{% static 'professional_portfolio/js/jquery.smoothscroll.js' %}"></script>
+
+</body>
+
+</html>
