@@ -167,6 +167,9 @@
   .parallax {
     font-size: 200%;
   }
+  .slide_set{
+         font-size: 200%;
+  }
 
    /* inherited class for all text boxes */
   .text {

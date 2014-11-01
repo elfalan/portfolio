@@ -13,7 +13,7 @@
 </head>
 
 <body>
-		<main class="container" id="top">
+<main class="container" id="top">
 <section>
 
 <div class="header-cont" style="display: true">
@@ -21,14 +21,11 @@
 
     <div class="nav">
         <ul>
-
-         <li><a data-scroll data-options='{ "easing": "linear" }' href="#p_group1">About</a></li>
-         <li><a data-scroll data-options='{ "easing": "linear" }'href="#">Projects</a></li>
-         <li><a data-scroll data-options='{ "easing": "linear" }'href="#group4">Talents</a></li>
-         <li><a data-scroll data-options='{ "easing": "linear" }'href="#group5">Contact</a></li>
-        <li><a data-scroll data-options='{ "easing": "linear" }' href="#group1">top</a></li>
-
-
+         <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#group2">About</a></li>
+         <li><a data-scroll data-options='{ "easing": "easeInQuad" }'href="#group1">Projects</a></li>
+         <li><a data-scroll data-options='{ "easing": "easeInQuad" }'href="#group4">Talents</a></li>
+         <li><a data-scroll data-options='{ "easing": "easeInQuad" }'href="#group5">Contact</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }'href="#group1">top</a></li>
         </ul>
     </div>
     </div>
@@ -37,9 +34,9 @@
     <label><input type="checkbox"> Debug</label>
     </div>
 
+    <div class="slide_set">
+
 {#     Group1 - Welcome #}
-<div class="parallax">
-<a id="p_group1"></a>
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base"></div>
 
@@ -56,9 +53,7 @@
         <div class="parallax__layer parallax__layer--fore">
             <div id="greeting_box"><strong>Please scroll down</strong></div></div>
       </div>
-{#    </div>#}
 {#  Group2 - Introduction #}
-{#<div class="parallax" id="p_group2">#}
 
     <div id="group2" class="parallax__group">
 
@@ -85,10 +80,8 @@
         <div class="parallax__layer parallax__layer--back">
       </div>
     </div>
-{# </div>#}
 
 {#     Group3 - projects  #}
-{#    <div class="parallax" id="p_group3">#}
 
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
@@ -111,10 +104,8 @@
         </div>
       </div>
     </div>
-{#</div>#}
 
 {#     Group4 - Talents  #}
-{#    <div class="parallax" id="p_group4">#}
 
     <div id="group4" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
@@ -135,7 +126,6 @@
 {#        <div class="text">Deep Background Layer</div>#}
       </div>
     </div>
-{#</div>#}
 
 {#     Group5 - Contact  #}
 {#    <div class="parallax" id="p_group5">#}
@@ -148,7 +138,6 @@
         <div class="text">Base Layer</div>
       </div>
     </div>
-{#        </div>#}
 
 {#     Group6   #}
 {##}
@@ -168,7 +157,7 @@
 {#      </div>#}
 {#    </div>#}
 
-</div>
+{#</div>#}
 
 </section>
 </main>
