@@ -2,48 +2,44 @@
 {% load staticfiles %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/style.css' %}" />
-<html>
+<html >
 <head lang="en">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Jesse M. Elfalan</title>
 
-
 </head>
 
 <body>
+		<main class="container" id="top">
+<section>
+
+<div class="header-cont" style="display: true">
+    <div class="name_header"><div class="text" style="left: 20%">Jesse M Elfalan |</div></div>
+
+    <div class="nav">
+        <ul>
+
+         <li><a data-scroll data-options='{ "easing": "linear" }' href="#p_group1">About</a></li>
+         <li><a data-scroll data-options='{ "easing": "linear" }'href="#">Projects</a></li>
+         <li><a data-scroll data-options='{ "easing": "linear" }'href="#group4">Talents</a></li>
+         <li><a data-scroll data-options='{ "easing": "linear" }'href="#group5">Contact</a></li>
+        <li><a data-scroll data-options='{ "easing": "linear" }' href="#group1">top</a></li>
 
 
+        </ul>
+    </div>
+    </div>
 
 <div class="debug">
     <label><input type="checkbox"> Debug</label>
     </div>
 
-
-<div class="header-cont">
-    <div class="name_header"><div class="text" style="left: 20%">Jesse M Elfalan |</div></div>
-    <header>
-    <div class="nav">
-        <ul>
-            <li><a href="#group2" data-menu-top="500">About</a></li>
-         <li><a href="#group3">Projects</a></li>
-         <li><a href="#group4">Talents</a></li>
-         <li><a href="#group5">Contact</a></li>
-
-        </ul>
-    </div>
-</header>
-    </div>
-
-
-
-
-
-
- <div class="parallax">
 {#     Group1 - Welcome #}
-
+<div class="parallax">
+<a id="p_group1"></a>
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base"></div>
 
@@ -60,20 +56,20 @@
         <div class="parallax__layer parallax__layer--fore">
             <div id="greeting_box"><strong>Please scroll down</strong></div></div>
       </div>
-
+{#    </div>#}
 {#  Group2 - Introduction #}
+{#<div class="parallax" id="p_group2">#}
 
     <div id="group2" class="parallax__group">
 
       <div class="parallax__layer parallax__layer--base">
-{#        <div class="text">Base Layer</div>#}
           <div class="text" id="intro_box">
               <article>
           <p id="aloha_text"><strong>Aloha!</strong></p>
                   <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
                   <br>
-                  I was born and raised in Hawaiian Islands, but recently moved to the<br>
-                  <strong>San Francisco Bay Area</strong>.<br>
+                  I was born and raised in the Hawaiian Islands, but recently moved to the<br>
+                  <strong>San Francisco Bay Area</strong> to seek new and exciting opportunities.<br>
                   <br>
                   My areas of interests are <strong>Application Development</strong> and <strong>Web Design</strong>,<br>
                   however I do possess a broad range of other skills.<br>
@@ -87,24 +83,27 @@
           </div>
       </div>
         <div class="parallax__layer parallax__layer--back">
-{#        <div class="text">Background Layer</div>#}
       </div>
     </div>
+{# </div>#}
 
 {#     Group3 - projects  #}
+{#    <div class="parallax" id="p_group3">#}
+
     <div id="group3" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
-{#        <div class="text">Foreground Layer</div>#}
+        <div class="text">Foreground Layer</div>
       </div>
       <div class="parallax__layer parallax__layer--base">
         <div class="text" id="project_box">
             <article>
             <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number<br>
                technologies and languages. Some of these include:<br>
+                <br>
                <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
                <br>
                I also enjoy exploring other languages and I am currently learning <br>
-               the <strong>Django/Python</strong> framework, and built this site as practice using this platform!<br>
+               the <strong>Django/Python</strong> framework, and built this site to practice using this platform!<br>
                 <br>
                 <strong>Please scroll to the right or click on the tabs to find out more about my projects.</strong>
                </p>
@@ -112,16 +111,20 @@
         </div>
       </div>
     </div>
+{#</div>#}
 
 {#     Group4 - Talents  #}
+{#    <div class="parallax" id="p_group4">#}
+
     <div id="group4" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="text" id="talent_box">
             <article>
-                <p>Aside from writing code, I also enjoy learning and exploring new things <br>
-                  which help stimulate my creative side.<br>
+                <p>Aside from writing code, I also enjoy learning and exploring new talents <br>
+                  that help stimulate my creative side.<br>
                 <br>
-                Not to brag but, I've been told I make a pretty killer beer!
+                Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
+                I don't generally brag, but I've been told I make a pretty killer Pale Ale!
                 <p>
         </div>
       </div>
@@ -132,8 +135,11 @@
 {#        <div class="text">Deep Background Layer</div>#}
       </div>
     </div>
+{#</div>#}
 
 {#     Group5 - Contact  #}
+{#    <div class="parallax" id="p_group5">#}
+
     <div id="group5" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
         <div class="text">Foreground Layer</div>
@@ -142,34 +148,30 @@
         <div class="text">Base Layer</div>
       </div>
     </div>
+{#        </div>#}
 
 {#     Group6   #}
-    <div id="group6" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
-        <div class="text">Background Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="text">Base Layer</div>
-      </div>
-    </div>
-
+{##}
+{#    <div id="group6" class="parallax__group">#}
+{#      <div class="parallax__layer parallax__layer--back">#}
+{#        <div class="text">Background Layer</div>#}
+{#      </div>#}
+{#      <div class="parallax__layer parallax__layer--base">#}
+{#        <div class="text">Base Layer</div>#}
+{#      </div>#}
+{#    </div>#}
+{##}
 {#     Group7   #}
-    <div id="group7" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="text">Base Layer</div>
-      </div>
-    </div>
-  </div>
+{#    <div id="group7" class="parallax__group">#}
+{#      <div class="parallax__layer parallax__layer--base">#}
+{#        <div class="text">Base Layer</div>#}
+{#      </div>#}
+{#    </div>#}
 
+</div>
 
- <script>
-    var debugInput = document.querySelector("input");
-    function updateDebugState() {
-        document.body.classList.toggle('debug-on', debugInput.checked);
-    }
-    debugInput.addEventListener("click", updateDebugState);
-    updateDebugState();
-  </script>
+</section>
+</main>
 
   <!--
 <script type="text/javascript">
@@ -192,12 +194,25 @@
 {#ga('send', 'pageview');#}
 {#</script>#}
 
-
-   <script src="{% static 'professional_portfolio/js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'professional_portfolio/js/jquery-1.11.1.min.js' %}"></script>
     <script src="{% static 'professional_portfolio/js/waypoints.min.js' %}"></script>
-    <script src="{% static 'professional_portfolio/js/skrollr.min.js' %}"></script>
+   <script src="{% static 'professional_portfolio/js/init.js' %}"></script>
+<script src="{% static 'professional_portfolio/js/skrollr.min.js' %}"></script>
     <script src="{% static 'professional_portfolio/js/skrollr.menu.min.js' %}"></script>
-    <script src="{% static 'professional_portfolio/js/jquery.smoothscroll.js' %}"></script>
+
+<script src='{% static 'professional_portfolio/js/smooth-scroll.js' %}'></script>
+
+		<script>
+			smoothScroll.init({
+				speed: 1000,
+				easing: 'easeInOutCubic',
+				offset: 0,
+				updateURL: true,
+				callbackBefore: function ( toggle, anchor ) {},
+				callbackAfter: function ( toggle, anchor ) {}
+			});
+		</script>
+
 
 </body>
 
