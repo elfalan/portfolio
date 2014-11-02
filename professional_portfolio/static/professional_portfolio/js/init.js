@@ -1,30 +1,13 @@
-//test for jquery load
+/************************
+ *
+ *Initialization of javascript plugins
+ *
+ */
 $(document).ready(function(){
-  window.onload = function() {
-        alert("welcome");
-    };
-
-//    $(function() {
-//	  $('a[href*=#]:not([href=#])').click(function() {
-//	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//
-//	      var target = $(this.hash);
-//	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//	      if (target.length) {
-//	        $('html,body').animate({
-//	          scrollTop: target.offset().top
-//	        }, 1000);
-//	        return false;
-//	      }
-//	    }
-//	  });
-//	});
-
+    $(function(){
+        $( "#tabs" ).tabs();
+   });
 });
-
-//    $('#test').click(function(){
-//        alert("test button clicked");
-//        });
 
 /***********************/
 //debug script
@@ -35,20 +18,46 @@ $(document).ready(function(){
     debugInput.addEventListener("click", updateDebugState);
     updateDebugState();
 
-//skrollr ini
+/***************************
+ * parallax features
+ */
+            $(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: -5
+			});
+		});
 
-//    skrollr.init({
-//        forceHeight: false
-//    });
+/*************************/
+//animated scrolling
+	smoothScroll.init({
+				speed: 1000,
+				easing: 'easeInOutCubic',
+				offset: 0,
+				updateURL: true,
+				callbackBefore: function ( toggle, anchor ) {},
+				callbackAfter: function ( toggle, anchor ) {}
+			});
 
-//$('.header-cont a').click(function(){
-//     alert("link was clicked")
-//});
+/************************
+ * picture gallery
+ */
 
+           Shadowbox.init({
+    handleOversize: "drag",
+    modal: true
+});
 
+/**************************
+ * blinker
+ */
+            function blink(selector){
+$(selector).fadeOut('slow', function(){
+    $(this).fadeIn('slow', function(){
+        blink(this);
+    });
+});
+}
 
-//  $('.header-cont a').smoothScroll({
-//      speed:1300
-//  });
-
+blink('#greeting_box');
 

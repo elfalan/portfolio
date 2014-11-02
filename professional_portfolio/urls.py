@@ -5,5 +5,7 @@ from professional_portfolio import views
 urlpatterns = patterns('',
  # url(r'^$', views.indexView.as_view(), name='index'),
  url(r'^$', views.index, name='index'),
- url(r'scroll_test/', views.scroll_test, name='scroll_test')
+ url(r'scroll_test/', views.scroll_test, name='scroll_test'),
+ url(r'^load_dcmd/', views.load_dcmd, name='load_dcmd'),
+
  )
