@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/style.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/shadowbox.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/style.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/shadowbox.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.min.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.theme.min.css' %}"/>
 
-<html >
+<html>
 <head lang="en">
 
 
@@ -16,147 +17,160 @@
 </head>
 
 <body>
-{%  csrf_token %}
+{% csrf_token %}
 
 <div class="header-cont" style="display: true">
-    <div class="name_header"><div class="text" style="left: 20%">Jesse M Elfalan |</div></div>
+    <div class="name_header">
+        <div class="text" style="left: 20%">Jesse M Elfalan |</div>
+    </div>
 
     <div class="nav">
         <ul>
-         <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
-         <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }'href="#group3">Projects</a></li>
-         <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }'href="#group4">Talents</a></li>
-         <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }'href="#group5">Contact</a></li>
-        <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }'href="#group1">top</a></li>
+            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
+            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Projects</a></li>
+            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group4">Talents</a></li>
+            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group5">Contact</a></li>
+            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">top</a></li>
         </ul>
     </div>
-    </div>
+
+</div>
 
 <div class="debug">
     <label><input type="checkbox"> Debug</label>
-    </div>
+</div>
 
-    <div class="slide_set">
+<div class="slide_set">
 
-{#     Group1 - Welcome #}
+    {#     Group1 - Welcome #}
     <div data-stellar-background-ratio="0.5" id="group1" class="parallax__group">
-        <div data-stellar-ratio="2" class="text" style="absolute"><div id="ekomomai"></div></div>
-      <div data-stellar-ratio="2" id="welcome"></div>
-            <div data-stellar-ratio="0.5" id="greeting_box"><strong>Please scroll down</strong></div>
-      </div>
-{#  Group2 - Introduction #}
+        <div data-stellar-ratio="2" class="text" style="absolute">
+            <div id="ekomomai"></div>
+        </div>
+        <div data-stellar-ratio="2" id="welcome"></div>
+        <div data-stellar-ratio="0.5" id="greeting_box"><strong>Please scroll down</strong></div>
+    </div>
+    {#  Group2 - Introduction #}
 
     <div id="group2" class="parallax__group">
 
-          <div data-stellar-ratio="2"class="text" id="intro_box">
-              <article>
-          <p id="aloha_text"><strong>Aloha!</strong></p>
-                  <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
-                  <br>
-                  I was born and raised in the Hawaiian Islands, but recently moved to the<br>
-                  <strong>San Francisco Bay Area</strong> to seek out new and exciting opportunities.<br>
-                  <br>
-                  My areas of interests are <strong>Application Development</strong> and <strong>Web Design</strong>,<br>
-                  however it is important to me that I continue to learn and expand my skill set.<br>
-                  <br>
-                  Please feel free to peruse this site to find out more about me.
-                  <br>
-                  Mahalo!
-                  </p>
-          </article>
-      </div>
+        <div data-stellar-ratio="2" class="text" id="intro_box">
+            <article>
+                <p id="aloha_text"><strong>Aloha!</strong></p>
+
+                <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
+                    <br>
+                    Originally from the Hawaiian Islands, I have recently relocated to the<br>
+                    <strong>San Francisco Bay Area</strong> to seek out new and exciting opportunities.<br>
+                    <br>
+                    My areas of interests are <strong>Application Development</strong> and <strong>Web
+                        Design</strong>,<br>
+                    however it is important that I continue to learn and expand my skill set.<br>
+                    <br>
+                    Please feel free to peruse this site to find out more about me.
+                    <br>
+                    Mahalo!
+                </p>
+            </article>
+        </div>
 
     </div>
 
-{#     Group3 - projects  #}
-
+    {#     Group3 - projects  #}
 
 
     <div id="group3" class="parallax__group">
 
-        <div class="text" id="project_box">
-            <article>
-            <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number<br>
-               technologies and languages. Some of these include:<br>
-                <br>
-               <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
-               <br>
-               I also enjoy exploring other languages and I am currently learning <br>
-               the <strong>Django/Python</strong> framework, and built this site to practice using this platform!<br>
-                <br>
-                <strong>Please scroll to the right or click on the tabs to find out more about my projects.</strong>
-               </p>
-                </article>
 
+        <div data-stellar-ratio="2" id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Technical Skills</a></li>
+                <li><a href="#tabs-2">Grails Project</a></li>
+                <li><a href="#tabs-3">Academic Projects</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="tab_text">
+                    <article>
+                        <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number
+                            of<br>
+                            different technologies and languages. Some of these include:<br>
+                            <br>
+                            <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
+                            <br>
+                            I also enjoy exploring other languages and I am currently learning <br>
+                            the <strong>Django/Python</strong> framework, and developed this site using Django for
+                            practice!<br>
+                            <br>
+                            <strong>Please click the tabs to find out more about projects I've worked on.</strong>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="tab_text">
+                    <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">DCmd (Data Center Meta Data)</p>
+                    <article>
+                        <p>Designed and developed a Data Information Management <Strong>Web Application</Strong> using
+                            the <strong>Grails</strong> framework.</p><a href="https://github.com/UHMDCmd/DCmd"><img
+                            src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"
+                            style="max-height: 5%"></a>
+                    </article>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <p></p>
+            </div>
+        </div>
 
-{#            <div id="tabs">#}
-{#  <ul>#}
-{#    <li><a href="#tabs-1">Nunc tincidunt</a></li>#}
-{#    <li><a href="#tabs-2">Proin dolor</a></li>#}
-{#    <li><a href="#tabs-3">Aenean lacinia</a></li>#}
-{#  </ul>#}
-{#  <div id="tabs-1">#}
-{#    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>#}
-{#  </div>#}
-{#  <div id="tabs-2">#}
-{#    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>#}
-{#  </div>#}
-{#  <div id="tabs-3">#}
-{#    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>#}
-{#    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>#}
-{#  </div>#}
-{#</div>#}
+        <div id="gallery">
 
-
-                    <button id="dcmd">dcmd</button>
         </div>
 
 
+        {#<button id="dcmd">dcmd</button>#}
 
-{#        light box gallery example#}
-        <div id="gallery" >
-            <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">My Image</a>
-{#        <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}">#}
-{#        <img src="{% static 'professional_portfolio/images/singing.png' %}">#}
-        </div>
+        {#        light box gallery example#}
+        {#        <div id="gallery" >#}
+        {#            <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">My Image</a>#}
+        {#        </div>#}
 
     </div>
-{#     DCmd   #}
+    {#     DCmd   #}
 
-{#    <div id="group6" class="sub_group">#}
-{#    <div id="group6" class="parallax__group" style="display: hidden">#}
-{##}
-{#    </div>#}
-{##}
-{#     Others   #}
-{#    <div id="group7" class="sub_group">#}
-{##}
-{#    </div>#}
+    {#    <div id="group6" class="sub_group">#}
+    {#    <div id="group6" class="parallax__group" style="display: hidden">#}
+    {##}
+    {#    </div>#}
+    {##}
+    {#     Others   #}
+    {#    <div id="group7" class="sub_group">#}
+    {##}
+    {#    </div>#}
 
 
-{#     Group4 - Talents  #}
+    {#     Group4 - Talents  #}
 
     <div id="group4" class="parallax__group">
         <div class="text" id="talent_box">
             <article>
                 <p>Aside from writing code, I also enjoy learning and exploring new talents <br>
-                  that help stimulate my creative side.<br>
-                <br>
-                Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
-                I don't generally brag, but I've been told I make a pretty killer Pale Ale!
+                    that help stimulate my creative side.<br>
+                    <br>
+                    Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
+                    I don't generally brag, but I've been told I make a pretty killer Pale Ale!
+
                 <p>
-      </div>
+        </div>
     </div>
 
-{#     Group5 - Contact  #}
-{#    <div class="parallax" id="p_group5">#}
+    {#     Group5 - Contact  #}
+    {#    <div class="parallax" id="p_group5">#}
 
     <div id="group5" class="parallax__group">
         <div class="text">Base Layer</div>
 
     </div>
-        </div>
-
+</div>
 
 
 {#</div>#}
@@ -164,16 +178,16 @@
 {#</section>#}
 {#</main>#}
 
-  <!--
+<!--
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-10812217-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10812217-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
 -->
 {#<script>#}
@@ -185,18 +199,17 @@
 {#ga('send', 'pageview');#}
 {#</script>#}
 
-    <script src="{% static 'professional_portfolio/js/jquery-1.11.1.min.js' %}"></script>
-    <script src="{% static 'professional_portfolio/js/waypoints.min.js' %}"></script>
+<script src="{% static 'professional_portfolio/js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'professional_portfolio/js/waypoints.min.js' %}"></script>
 <script src="{% static 'professional_portfolio/js/skrollr.min.js' %}"></script>
-    <script src="{% static 'professional_portfolio/js/skrollr.menu.min.js' %}"></script>
+<script src="{% static 'professional_portfolio/js/skrollr.menu.min.js' %}"></script>
 <script src='{% static 'professional_portfolio/js/smooth-scroll.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery.stellar.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/shadowbox.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery-ui.min.js' %}'></script>
 
-   <script src="{% static 'professional_portfolio/js/init.js' %}"></script>
-   <script src="{% static 'professional_portfolio/js/ajax_calls.js' %}"></script>
-
+<script src="{% static 'professional_portfolio/js/init.js' %}"></script>
+<script src="{% static 'professional_portfolio/js/ajax_calls.js' %}"></script>
 
 
 </body>
