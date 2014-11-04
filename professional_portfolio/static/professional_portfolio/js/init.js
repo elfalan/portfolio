@@ -7,16 +7,17 @@ $(document).ready(function () {
     $(function () {
         $("#tabs").tabs();
     });
+
+//    initialize project windows
+    $('#dcmd_window').hide();
+    $('#academic_window').hide();
+        $('#skills_window').show();
+
+
+
 });
 
-/***********************/
-//debug script
-var debugInput = document.querySelector("input");
-function updateDebugState() {
-    document.body.classList.toggle('debug-on', debugInput.checked);
-}
-debugInput.addEventListener("click", updateDebugState);
-updateDebugState();
+
 
 /***************************
  * parallax features
@@ -45,20 +46,36 @@ smoothScroll.init({
  * picture gallery
  */
 
-Shadowbox.init({
-    handleOversize: "resize",
-    modal: true,
-//    counterType:"skip",
-    continuous:true,
-    displayNav: true,
-    displayCounter:true,
-    enableKeys:true,
-    viewportPadding:50
-//    initialHeight: "100px",
-//    initialWidth:"100px"
+$('.photoset-grid-lightbox').photosetGrid({
+  highresLinks: true,
+  rel: 'withhearts-gallery',
+  gutter: '2px',
 
-
+  onComplete: function(){
+    $('.photoset-grid-lightbox').attr('style', '');
+    $('.photoset-grid-lightbox a').colorbox({
+      photo: true,
+      scalePhotos: true,
+      maxHeight:'90%',
+      maxWidth:'90%'
+    });
+  }
 });
+
+//Shadowbox.init({
+//    handleOversize: "resize",
+//    modal: true,
+////    counterType:"skip",
+//    continuous:true,
+//    displayNav: true,
+//    displayCounter:true,
+//    enableKeys:true,
+//    viewportPadding:50
+////    initialHeight: "100px",
+////    initialWidth:"100px"
+//
+//
+//});
 
 /**************************
  * blinker

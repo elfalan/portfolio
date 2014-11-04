@@ -2,9 +2,12 @@
 {% load staticfiles %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/style.css' %}"/>
-<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/shadowbox.css' %}"/>
+{#<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/shadowbox.css' %}"/>#}
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.min.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.theme.min.css' %}"/>
+{#<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/main.css' %}"/>#}
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/colorbox.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/nav.css' %}"/>
 
 
 <html>
@@ -21,25 +24,25 @@
 {% csrf_token %}
 
 <div class="header-cont" style="display: true">
+
+
     <div class="name_header">
-        <div class="text" style="left: 20%">Jesse M Elfalan |</div>
-    </div>
+        <div class="text" style="left: 30%">Jesse M Elfalan |</div>
 
-    <div class="nav">
-        <ul>
-            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Projects</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group4">Talents</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group5">Contact</a></li>
-            <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">top</a></li>
-        </ul>
+
+        <div id="cssmenu" style="position:relative; left:45%">
+            <ul>
+                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
+                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Work</a></li>
+                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group4">Talents</a></li>
+                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group5">Contact</a></li>
+                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Top</a></li>
+            </ul>
+        </div>
     </div>
 
 </div>
 
-<div class="debug">
-    <label><input type="checkbox"> Debug</label>
-</div>
 
 <div class="slide_set">
 
@@ -85,7 +88,7 @@
 
         <div data-stellar-ratio="2" id="tabs">
             <ul>
-                <li><a id = "tab1_anchor" href="#tabs-1">Technical Skills</a></li>
+                <li><a id="tab1_anchor" href="#tabs-1">Technical Skills</a></li>
                 <li><a id="tab2_anchor" href="#tabs-2">Grails Project</a></li>
                 <li><a id="tab3_anchor" href="#tabs-3">Academic Projects</a></li>
             </ul>
@@ -113,10 +116,11 @@
                     <article>
                         <p>A Data Information Management <Strong>Web Application</Strong> developed on
                             the <strong>Grails</strong> framework.</p>
+
                         <p></p>
                         <a href="https://github.com/UHMDCmd/DCmd"><img
-                            src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"
-                            style="max-height: 5%"></a>
+                                src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"
+                                style="max-height: 5%"></a>
                     </article>
                 </div>
             </div>
@@ -124,50 +128,51 @@
                 <p></p>
             </div>
         </div>
-{#        <div class="gallery" id ="skills_window" style="background-color:red; display:block; ">#}
-        <div class="gallery" id ="skills_window" style=" display:block; ">
+        {#        <div class="gallery" id ="skills_window" style="background-color:red; display:block; ">#}
+        <div class="gallery" id="skills_window" style=" background-color:darkred ;display:inline-flex; ">
 
-             <table class="thumbs" border="3" cellspacing="0" cellpadding="0">
-            <tbody>
-                <tr>
-                    <td><a class="gallery_pic" rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
-                        <img alt="grid1" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img1_thumb.png' %}"></a></td>
-                    <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}">
-                        <img alt="grid2" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img2_thumb.png' %}"></a></td>
-                </tr>
-                   <tr>
-                         <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}">
-                        <img alt="grid3" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img3_thumb.png' %}"></a></td>
-                        <td></td>
-                   </tr>
-                <tr>
-                       <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}">
-                        <img alt="rack1" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack1_thumb.png' %}"></a></td>
-                    <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}">
-                        <img alt="rack2" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack2_thumb.png' %}"></a></td>
-             </tr>
-            </tbody>
-        </table>
 
         </div>
-        <div class="gallery" id ="dcmd_window" style="background-color:yellow; display:none">
-        <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">dcmd Image</a>
+
+        {#          table here#}
+        {##}
+        {#            {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}#}
+        {#            {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}#}
+        {#            {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}#}
+
+
+        <div class="gallery" id="dcmd_window" style="display:inline-flex;">
+
+            <div class="photoset-grid-lightbox" data-layout="131" style="visibility: hidden">
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}" width="300"
+                     height="150"
+                     data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
+                <img src=" {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}"
+                     width="175" height="100"
+                     data-highres=" {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}">
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}" width="175"
+                     height="100"
+                     data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}">
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}" width="175"
+                     height="100"
+                     data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}">
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}" width="300"
+                     height="150"
+                     data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}">
+            </div>
         </div>
 
-        <div class="gallery" id ="academic_window" style="background-color:green; display:none">
-<a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">projects Image</a>
+        <div class="gallery" id="academic_window" style=" display:inline-flex">
+            <div class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
+                <img src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
+                     data-highres="{% static 'professional_portfolio/images/academic_2.png' %}">
+                <img src="{% static 'professional_portfolio/images/academic_1.png' %}" width="500" height="300"
+                     data-highres="{% static 'professional_portfolio/images/academic_1.png' %}">
+
+            </div>
+
         </div>
 
-
-
-
-
-        {#<button id="dcmd">dcmd</button>#}
-
-        {#        light box gallery example#}
-        {#        <div id="gallery" >#}
-{#                    <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">My Image</a>#}
-        {#        </div>#}
 
     </div>
     {#     DCmd   #}
@@ -240,8 +245,9 @@ _gaq.push(['_trackPageview']);
 <script src="{% static 'professional_portfolio/js/skrollr.menu.min.js' %}"></script>
 <script src='{% static 'professional_portfolio/js/smooth-scroll.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery.stellar.js' %}'></script>
-<script src='{% static 'professional_portfolio/js/shadowbox.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery-ui.min.js' %}'></script>
+<script src='{% static 'professional_portfolio/js/jquery.photoset-grid.min.js' %}'></script>
+<script src='{% static 'professional_portfolio/js/jquery.colorbox.js' %}'></script>
 
 <script src="{% static 'professional_portfolio/js/init.js' %}"></script>
 <script src="{% static 'professional_portfolio/js/ajax_calls.js' %}"></script>
