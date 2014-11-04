@@ -140,13 +140,12 @@ body {
     background-color: rgb(71, 54, 194);
 }
 
-#gallery {
+.gallery {
     position: absolute;
     left: 78%;
     top: 55%;
     height:500px;
     width:500px;
-    background: #444444;
 
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

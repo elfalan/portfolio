@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.min.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.theme.min.css' %}"/>
 
+
 <html>
 <head lang="en">
 
@@ -84,9 +85,9 @@
 
         <div data-stellar-ratio="2" id="tabs">
             <ul>
-                <li><a href="#tabs-1">Technical Skills</a></li>
-                <li><a href="#tabs-2">Grails Project</a></li>
-                <li><a href="#tabs-3">Academic Projects</a></li>
+                <li><a id = "tab1_anchor" href="#tabs-1">Technical Skills</a></li>
+                <li><a id="tab2_anchor" href="#tabs-2">Grails Project</a></li>
+                <li><a id="tab3_anchor" href="#tabs-3">Academic Projects</a></li>
             </ul>
             <div id="tabs-1">
                 <div class="tab_text">
@@ -110,8 +111,10 @@
                 <div class="tab_text">
                     <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">DCmd (Data Center Meta Data)</p>
                     <article>
-                        <p>Designed and developed a Data Information Management <Strong>Web Application</Strong> using
-                            the <strong>Grails</strong> framework.</p><a href="https://github.com/UHMDCmd/DCmd"><img
+                        <p>A Data Information Management <Strong>Web Application</Strong> developed on
+                            the <strong>Grails</strong> framework.</p>
+                        <p></p>
+                        <a href="https://github.com/UHMDCmd/DCmd"><img
                             src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"
                             style="max-height: 5%"></a>
                     </article>
@@ -121,17 +124,26 @@
                 <p></p>
             </div>
         </div>
-
-        <div id="gallery">
-
+        <div class="gallery" id ="skills_window" style="background-color:red; display:block">
+        <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">skills Image</a>
         </div>
+        <div class="gallery" id ="dcmd_window" style="background-color:yellow; display:none">
+<a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">dcmd Image</a>
+        </div>
+
+        <div class="gallery" id ="academic_window" style="background-color:green; display:none">
+<a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">projects Image</a>
+        </div>
+
+
+
 
 
         {#<button id="dcmd">dcmd</button>#}
 
         {#        light box gallery example#}
         {#        <div id="gallery" >#}
-        {#            <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">My Image</a>#}
+{#                    <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">My Image</a>#}
         {#        </div>#}
 
     </div>

@@ -3,12 +3,14 @@
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
 .ui-widget {
-    font-family: Verdana, Arial, sans-serif;
+    /*font-family: Verdana, Arial, sans-serif;*/
+    font-family: Arial "Arial Rounded MT" Bold;
     font-size: 1.1em
+
 }
 
 .ui-widget .ui-widget {
-    font-size: 1em
+    font-size: 1em;
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
@@ -17,17 +19,18 @@
 }
 
 .ui-widget-content {
-    border: 1px solid #a6c9e2;
+    border: 3px solid #1F1088;
     background: #fcfdfd url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_inset-hard_100_fcfdfd_1x100.png") 50% bottom repeat-x;
-    color: #222
+    color: #222;
+
 }
 
 .ui-widget-content a {
     color: #222
 }
-
+/*active tab*/
 .ui-widget-header {
-    border: 1px solid #4297d7;
+    border: 1px solid #1515BB;
     /*background: #2191c0 url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_75_2191c0_500x100.png") 50% 50% repeat-x;*/
     /*background: #6E2EBF url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_75_2191c0_500x100.png") 50% 50% repeat-x;*/
     background: #6455CE url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_75_2191c0_500x100.png") 50% 50% repeat-x;
@@ -38,35 +41,36 @@
 .ui-widget-header a {
     /*color: #eaf5f7*/
     color: #eaf5f7;
+
 }
+
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     /*border: 1px solid #77d5f7;*/
-    border: 1px solid #77d5f7;
+    border: 1px solid #2A024F;
     /*background: #0078ae url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_glass_45_0078ae_1x400.png") 50% 50% repeat-x;*/
     background: #1F1088 url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_glass_45_0078ae_1x400.png") 50% 50% repeat-x;
     font-weight: normal;
-    color: #fff
+    color: #2A024F;
 }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
-    color: whitesmoke;
+    color: dimgray;
     text-decoration: none;
     opacity:50%;
 }
-
+/*inactive tab - hover*/
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     /*border: 1px solid #448dae;*/
-    border: 1px solid #8E4BCB;
-    /*background: #79c9ec url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_glass_75_79c9ec_1x400.png") 50% 50% repeat-x;*/
-    background: #490884 url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_glass_75_79c9ec_1x400.png") 50% 50% repeat-x;
+    border: 1px solid #A86FDC;
+    background: #8D50C5 url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_glass_75_79c9ec_1x400.png") 50% 50% repeat-x;
     font-weight: normal;
-    color: #026890
+    color: #026890;
 }
-
+/*font color - hover inactive tab*/
 .ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {
     /*color: #026890;*/
-    color: mediumpurple;
+    color: lightgrey;
     text-decoration: none
 }
 
@@ -75,11 +79,11 @@
     /*background: #6eac2c url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_50_6eac2c_500x100.png") 50% 50% repeat-x;*/
     background: rgb(71, 54, 194) url("../../../../../Downloads/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_50_6eac2c_500x100.png") 50% 50% repeat-x;
     font-weight: normal;
-    color: #fff
+    color: #FFE37E;
 }
-
+/*actve tab font color*/
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
-    color: #fff;
+    color: lightgrey;
     text-decoration: none
 }
 
@@ -861,19 +865,19 @@
 }
 
 .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
-    border-top-left-radius: 5px
+    border-top-left-radius: 20px
 }
 
 .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
-    border-top-right-radius: 5px
+    border-top-right-radius: 20px
 }
 
 .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
-    border-bottom-left-radius: 5px
+    border-bottom-left-radius: 10px
 }
 
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-    border-bottom-right-radius: 5px
+    border-bottom-right-radius: 10px
 }
 
 .ui-widget-overlay {

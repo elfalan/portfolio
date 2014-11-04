@@ -15,8 +15,8 @@ def index(request):
 
 def load_dcmd(request):
     # background: light purple
-
-    data = {'background_color': 'rgb(108, 81, 208)'}
+    image_ref = "<a href=&quot;{%static&apos;professional_portfolio/images/singing.png&apos;%}&quot;rel=&quot;shadowbox&quot;>Image</a>"
+    data = {'image_ref': image_ref}
     return HttpResponse(json.dumps(data), content_type='application/json')
     # message = "ajax worked! loading dcmd data"
     # return HttpResponse(background)
