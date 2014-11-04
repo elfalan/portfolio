@@ -94,12 +94,12 @@
                     <article>
                         <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number
                             of<br>
-                            different technologies and languages. Some of these include:<br>
+                            languages and technologies. Some of these include:<br>
                             <br>
                             <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
                             <br>
                             I also enjoy exploring other languages and I am currently learning <br>
-                            the <strong>Django/Python</strong> framework, and developed this site using Django for
+                            the <strong>Django/Python</strong> framework, and developed this site using Django as
                             practice!<br>
                             <br>
                             <strong>Please click the tabs to find out more about projects I've worked on.</strong>
@@ -124,11 +124,34 @@
                 <p></p>
             </div>
         </div>
-        <div class="gallery" id ="skills_window" style="background-color:red; display:block">
-        <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">skills Image</a>
+{#        <div class="gallery" id ="skills_window" style="background-color:red; display:block; ">#}
+        <div class="gallery" id ="skills_window" style=" display:block; ">
+
+             <table class="thumbs" border="3" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td><a class="gallery_pic" rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
+                        <img alt="grid1" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img1_thumb.png' %}"></a></td>
+                    <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}">
+                        <img alt="grid2" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img2_thumb.png' %}"></a></td>
+                </tr>
+                   <tr>
+                         <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}">
+                        <img alt="grid3" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img3_thumb.png' %}"></a></td>
+                        <td></td>
+                   </tr>
+                <tr>
+                       <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}">
+                        <img alt="rack1" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack1_thumb.png' %}"></a></td>
+                    <td><a rel="shadowbox" href="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}">
+                        <img alt="rack2" class="border" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack2_thumb.png' %}"></a></td>
+             </tr>
+            </tbody>
+        </table>
+
         </div>
         <div class="gallery" id ="dcmd_window" style="background-color:yellow; display:none">
-<a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">dcmd Image</a>
+        <a href="{% static 'professional_portfolio/images/singing.png' %}" rel="shadowbox">dcmd Image</a>
         </div>
 
         <div class="gallery" id ="academic_window" style="background-color:green; display:none">
