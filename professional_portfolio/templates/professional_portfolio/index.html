@@ -47,7 +47,8 @@
 <div class="slide_set">
 
     {#     Group1 - Welcome #}
-    <div data-stellar-background-ratio="0.5" id="group1" class="parallax__group">
+{#    <div data-stellar-background-ratio="0.5" id="group1" class="parallax__group">#}
+    <div id="group1" class="parallax__group">
         <div data-stellar-ratio="2" class="text" style="absolute">
             <div id="ekomomai"></div>
         </div>
@@ -69,13 +70,20 @@
                     <br>
                     My areas of interests are <strong>Application Development</strong> and <strong>Web
                         Design</strong>,<br>
-                    however it is important that I continue to learn and expand my skill set.<br>
+                    however it is important to me that I continue to learn and expand upon <br>
+                    my skill set, and so therefore up for a variety of challenges.<br>
                     <br>
-                    Please feel free to peruse this site to find out more about me.
+                    Please peruse this site to find out more about me.
                     <br>
                     Mahalo!
                 </p>
             </article>
+        </div>
+
+        <div data-stellar-ratio="4" id="islands" class="islands_container">
+            <div position="absolute" style="left:70%">
+            <a><img class="island" src="{% static 'professional_portfolio/images/islands/big_island.png' %}"></a>
+                </div>
         </div>
 
     </div>
@@ -110,27 +118,35 @@
                     </article>
                 </div>
             </div>
-            <div id="tabs-2">
-                <div class="tab_text">
+            <div id="tabs-2" >
+                <div class="tab_text" style="overflow: hidden">
                     <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">DCmd (Data Center Meta Data)</p>
                     <article>
-                        <p>A Data Information Management <Strong>Web Application</Strong> developed on
-                            the <strong>Grails</strong> framework.</p>
+                        <p>Description: A Data Information Management <Strong>Web Application</Strong> developed <br>
+                            for the university of Hawaii on the <strong>Grails</strong> framework.<br>
+                            <br>
+                           Goal: To create a centralized meta data information system for the University's<br>
+                            Technology Center, and improve upon data access and data entry for <br>
+                            the University's staff.<br>
+                            <br>
+                            Project Role/Duration: Developer, 2010-2014
+                        </p>
 
-                        <p></p>
-                        <a href="https://github.com/UHMDCmd/DCmd"><img
-                                src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"
-                                style="max-height: 5%"></a>
+
                     </article>
+
                 </div>
+<div><a href="https://github.com/UHMDCmd/DCmd"><img class="github_logo"
+                                src="{% static 'professional_portfolio/images/GitHub_Logo.png' %}"></a></div>
+
             </div>
             <div id="tabs-3">
                 <p></p>
             </div>
         </div>
         {#        <div class="gallery" id ="skills_window" style="background-color:red; display:block; ">#}
-        <div class="gallery" id="skills_window" style=" background-color:darkred ;display:inline-flex; ">
-
+        <div class="gallery" id="skills_window" style=" display:inline-flex; ">
+        <img src="{% static 'professional_portfolio/images/experience_chart_crop.png' %}">
 
         </div>
 
@@ -193,14 +209,38 @@
     <div id="group4" class="parallax__group">
         <div class="text" id="talent_box">
             <article>
-                <p>Aside from writing code, I also enjoy learning and exploring new talents <br>
-                    that help stimulate my creative side.<br>
+                <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
+                    my creative side.<br>
                     <br>
                     Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
-                    I don't generally brag, but I've been told I make a pretty killer Pale Ale!
+                    I generally don't brag, but I've been told I make a pretty killer Pale Ale!
 
-                <p>
+                </p>
+                <br>
+                <br>
+                </article>
+{#data-stellar-ratio="2"#}
         </div>
+        <div  data-stellar-ratio="2" style="position:relative; left:15%; top:25%"><a ><img   id="beer" src="{% static 'professional_portfolio/images/beer_s.png' %}"></a></div>
+
+         <div class="gallery" id="talent_window" style=" display:inline-flex; top:40%">
+            <div class="photoset-grid-lightbox" data-layout="121" style="visibility: hidden">
+                <img src="{% static 'professional_portfolio/images/singing.png' %}" width="800" height="400"
+                     data-highres="{% static 'professional_portfolio/images/singing.png' %}">
+                <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="400" height="300"
+                     data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
+                <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="400" height="300"
+                     data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
+                <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="600" height="800"
+                     data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
+
+
+
+            </div>
+
+
+        </div>
+
     </div>
 
     {#     Group5 - Contact  #}
@@ -208,6 +248,8 @@
 
     <div id="group5" class="parallax__group">
         <div class="text">Base Layer</div>
+
+
 
     </div>
 </div>

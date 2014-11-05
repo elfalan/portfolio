@@ -173,6 +173,16 @@ body {
     top: 50%;
 }
 
+.islands_container {
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: 60% / 1.5 Arial Rounded MT Bold;
+}
+
 .content_text {
 
 }
@@ -256,6 +266,25 @@ body {
     background: rgb(153, 71, 205);
 
 }
+
+/***********************/
+/*image properties*/
+.island{
+    -ms-transform: scale(0.2,0.2); /* IE 9 */
+    -webkit-transform: scale(0.2,0.2); /* Chrome, Safari, Opera */
+    transform: scale(0.2,0.2);
+}
+.github_logo{
+    -ms-transform: scale(0.1,0.1); /* IE 9 */
+    -webkit-transform: scale(0.1,0.1); /* Chrome, Safari, Opera */
+    transform: scale(0.1,0.1);
+}
+#beer{
+     -ms-transform: scale(0.3,0.3); /* IE 9 */
+    -webkit-transform: scale(0.3,0.3); /* Chrome, Safari, Opera */
+    transform: scale(0.3,0.3);
+}
+
 
 /* misc
 --------------------------------------------- */
