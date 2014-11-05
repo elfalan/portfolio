@@ -26,11 +26,9 @@
 <div class="header-cont" style="display: true">
 
 
-    <div class="name_header">
-        <div class="text" style="left: 30%">Jesse M Elfalan |</div>
-
-
-        <div id="cssmenu" style="position:relative; left:45%">
+        <div class="name_header">
+{#        <div style="position:absolute; left:10%; padding-bottom: 10px">Jesse M Elfalan |</div>#}
+        <div id="cssmenu" style="float:right">
             <ul>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Work</a></li>
@@ -39,9 +37,11 @@
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Top</a></li>
             </ul>
         </div>
+                    <div style="float:left; text-align: left">Jesse M Elfalan</div>
     </div>
-
 </div>
+
+{#</div>#}
 
 
 <div class="slide_set">
@@ -49,20 +49,24 @@
     {#     Group1 - Welcome #}
 {#    <div data-stellar-background-ratio="0.5" id="group1" class="parallax__group">#}
     <div id="group1" class="parallax__group">
-        <div data-stellar-ratio="2" class="text" style="absolute">
-            <div id="ekomomai"></div>
-        </div>
-        <div data-stellar-ratio="2" id="welcome"></div>
-        <div data-stellar-ratio="0.5" id="greeting_box"><strong>Please scroll down</strong></div>
+            <div class="centered_content" data-stellar-ratio="2"  style="position: absolute; top:70%;left:50%; width:500px; height:300px ">
+            <div  id="ekomomai">
+                <img src="{% static 'professional_portfolio/images/ekomomai.png' %}"></div>
+        <div id="welcome" style="position:absolute; left:28%"><img src="{% static 'professional_portfolio/images/welcome.png' %}"></div>
+            </div>
+{#        <div class="centered_content" data-stellar-ratio="0.5" id="greeting_box" style="left:50%; top:60%"><strong>Please scroll down</strong></div>#}
     </div>
     {#  Group2 - Introduction #}
 
     <div id="group2" class="parallax__group">
-
-        <div data-stellar-ratio="2" class="text" id="intro_box">
-            <article>
+{#data-stellar-offset-parent="true"#}
+{#        data-stellar-vertical-offset="50"#}
+{#        data-stellar-ratio="2"#}
+{#        <div class="centered_content" data-stellar-offset-parent="true" style="position:absolute; top:50%; left:30%">#}
+{#        <div data-stellar-ratio="2" class="centered_content text" style="position:absolute; top:50%;left:30%">#}
+        <div data-stellar-ratio="2" style="position:absolute; top:20%;left:10%">
                 <p id="aloha_text"><strong>Aloha!</strong></p>
-
+                <div class="content_text text">
                 <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
                     <br>
                     Originally from the Hawaiian Islands, I have recently relocated to the<br>
@@ -73,17 +77,32 @@
                     however it is important to me that I continue to learn and expand upon <br>
                     my skill set, and so therefore up for a variety of challenges.<br>
                     <br>
-                    Please peruse this site to find out more about me.
+                    Please feel free to peruse this site to find out more about me.
                     <br>
                     Mahalo!
                 </p>
-            </article>
-        </div>
+                    </div>
+{#        </div>#}
+            </div>
+{#data-stellar-offset-parent="true"#}
 
-        <div data-stellar-ratio="4" id="islands" class="islands_container">
-            <div position="absolute" style="left:70%">
+        <div  id="island_container" class ="centered_content" style="position:relative; left:75%; top:45%; width:500px; height:500px;background-color: indianred">
+
+            <div data-stellar-ratio="2" class="centered_content" style="position:absolute; top:110%; left:80%">
+{#            <div data-stellar-ratio="2" class="centered_content" style="position:absolute; top:80%; left:80%">#}
             <a><img class="island" src="{% static 'professional_portfolio/images/islands/big_island.png' %}"></a>
                 </div>
+            <div data-stellar-ratio="4" class="centered_content" style="position:absolute; top:30%; left:60%">
+{#            <div class="centered_content" style="position:absolute; top:60%; left:60%">#}
+            <a><img  class="island" src="{% static 'professional_portfolio/images/islands/maui_molokai.png' %}"></a>
+                </div>
+            <div data-stellar-ratio="5" class="centered_content" style="position:absolute; top:48%; left:40%">
+            <a><img class="island" src="{% static 'professional_portfolio/images/islands/oahu.png' %}"></a>
+                </div>
+            <div class="centered_content" style="position:absolute; top:40%; left:20%">
+            <a><img class="island" src="{% static 'professional_portfolio/images/islands/kauai.png' %}"></a>
+                </div>
+
         </div>
 
     </div>
