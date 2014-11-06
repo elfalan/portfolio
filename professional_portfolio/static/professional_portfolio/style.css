@@ -54,37 +54,44 @@
     position: relative;
     height: 500px; /*fallback for older browsers */
     height: 100vh;
+    z-index: 1;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 
 }
+.item{
+    margin:0 auto;
+    display:block;
+}
+/*article {position:relative; max-width: 1000px; margin: 0 auto; height: 1000px; display: block; }*/
+/*article p {position: relative; z-index: 20}*/
 
 /* Debugger styles - used to show the effect
 --------------------------------------------- */
 
-.debug {
-    position: fixed;
-    top: 0;
-    left: .5em;
-    z-index: 999;
-    background: rgba(0, 0, 0, .85);
-    color: #fff;
-    padding: .5em;
-    border-radius: 0 0 5px 5px;
-}
+/*.debug {*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: .5em;*/
+    /*z-index: 999;*/
+    /*background: rgba(0, 0, 0, .85);*/
+    /*color: #fff;*/
+    /*padding: .5em;*/
+    /*border-radius: 0 0 5px 5px;*/
+/*}*/
 
-.debug-on .parallax__group {
-    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-    transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
+/*.debug-on .parallax__group {*/
+    /*-webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);*/
+    /*transform: translate3d(700px, 0, -800px) rotateY(30deg);*/
+/*}*/
 
-.debug-on .parallax__layer {
-    box-shadow: 0 0 0 2px #000;
-    opacity: 0.9;
-}
+/*.debug-on .parallax__layer {*/
+    /*box-shadow: 0 0 0 2px #000;*/
+    /*opacity: 0.9;*/
+/*}*/
 
-.parallax__group {
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-}
+
 
 /* page styles
 --------------------------------------------- */
@@ -95,7 +102,9 @@ body, html {
 }
 
 body {
-    font: 100% / 1.5 Arial;
+    font: 200% / 1.5 Arial;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 * {
@@ -103,97 +112,53 @@ body {
     padding: 0;
 }
 
-.slide_set {
+/*.slide_set {*/
     /*position: relative;*/
-    font-size: 200%;
-}
+   /*font-size: 200%;*/
+/*}*/
 
-/* inherited class for all  boxes */
-.text {
-    text-align: left;
-    /*position: relative;*/
-    /*left: 50%;*/
-    /*top: 40%;*/
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
-}
 
 .tab_text {
     position: absolute;
     font: 60% / 1.5 Arial Narrow;
     font-size: 20px;
     color: rgba(232, 253, 255, 0.64);
-    left: 5%;
+    left: 3%;
     top: 20%;
+    height:600px;
+    width:650px;
 }
 
 #tabs {
     /*text-align: justify;*/
     position: absolute;
     font-size: 20px;
-    left: 5%;
-    top: 15%;
-    width: 50%;
-    height: 75%;
+    width: 750px;
+    height: 600px;
     background: rgb(71, 54, 194);
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
 }
 
-#tabs-1 {
-    background-color: rgb(71, 54, 194);
-}
 
 .gallery {
     position: absolute;
-    left: 78%;
-    top: 50%;
     height:500px;
     width:500px;
-
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
-.centered_content{
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-/*#ekomomai {*/
-    /*content: url('images/ekomomai.png');*/
-/*}*/
 
-/*#welcome {*/
-    /*content: url('images/welcome.png');*/
-    /*position: relative;*/
-    /*text-align: center;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*top: 50.5%;*/
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
-/*}*/
 
 #aloha_text {
     font: 60px / 1.5 Arial Rounded MT Bold;
     color: rgba(255, 48, 0, 0.52);
-    /*left: 30%;*/
-    /*top: 50%;*/
+
 }
 
-.islands_container {
-    text-align: center;
-    position: absolute;
-    left: 60%;
-    top: 55%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font: 60% / 1.5 Arial Rounded MT Bold;
-}
 
 .content_text {
    font: 60% / 1.5 Arial Narrow;
-    font-size: 20px;
-    color: rgba(232, 253, 255, 0.64);
+   font-size: 20px;
+   color: rgba(232, 253, 255, 0.64);
+   text-align: left;
+
 }
 
 #greeting_box {
@@ -208,8 +173,6 @@ body {
 #intro_box {
     font: 60% / 1.5 Arial Narrow;
     color: rgba(232, 253, 255, 0.85);
-    /*left: 30%;*/
-    /*top: 50%;*/
 }
 
 #project_box {
@@ -232,7 +195,7 @@ body {
 --------------------------------------------- */
 
 #group1 {
-    z-index: 0; /* slide over group 2 */
+    z-index:0;
     /*background: url('images/napali2.jpeg');*/
     background: url('images/napali_coast_clr.jpeg');
     background-size: 100% 100%;
@@ -277,14 +240,30 @@ body {
 /***********************/
 /*image properties*/
 .island{
-    -ms-transform: scale(0.2,0.2); /* IE 9 */
-    -webkit-transform: scale(0.2,0.2); /* Chrome, Safari, Opera */
-    transform: scale(0.2,0.2);
+    -ms-transform: scale(0.4,0.4); /* IE 9 */
+    -webkit-transform: scale(0.4,0.4); /* Chrome, Safari, Opera */
+    transform: scale(0.4,0.4);
 }
-.github_logo{
-    -ms-transform: scale(0.1,0.1); /* IE 9 */
-    -webkit-transform: scale(0.1,0.1); /* Chrome, Safari, Opera */
-    transform: scale(0.1,0.1);
+#big_island{
+    content:url('images/islands/big_island.png');
+        }
+#maui_molokai{
+    content:url('images/islands/maui_molokai.png');
+        }
+#oahu{
+    content:url('images/islands/oahu.png');
+        }
+#kauai{
+    content:url('images/islands/kauai.png');
+        }
+
+
+
+#github_logo{
+    /*-ms-transform: scale(0.1,0.1); *//* IE 9 */
+    /*-webkit-transform: scale(0.1,0.1); *//* Chrome, Safari, Opera */
+    /*transform: scale(0.1,0.1);*/
+    content: url('images/GitHub-Mark-64px.png');
 }
 #beer{
      -ms-transform: scale(0.3,0.3); /* IE 9 */

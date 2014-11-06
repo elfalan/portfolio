@@ -26,15 +26,6 @@ $(document).ready(function () {
 
     $('#tab2_anchor').click(function () {
 
-//toggle other windows off
-//        var currentWindow = $('#skills_window');
-//        currentWindow.css("display", "none");
-//
-//        currentWindow = $('#academic_window');
-//        currentWindow.css("display", "none");
-//
-//        currentWindow = $("#dcmd_window");
-//        currentWindow.css("visibility", "visible");
         $('#skills_window').hide();
         $('#academic_window').hide();
         $('#dcmd_window').show();
@@ -48,17 +39,9 @@ $(document).ready(function () {
         $('#dcmd_window').hide();
                 $('#academic_window').show();
 
-        //toggle other windows off
-//        var currentWindow = $('#skills_window');
-//        currentWindow.css("display", "none");
-//
-//        currentWindow = $('#dcmd_window');
-//        currentWindow.css("display", "none");
-//
-//        currentWindow = $("#academic_window");
-//        currentWindow.css("display", "block");
+    });
 
-//     $.ajax({
+    //     $.ajax({
 //    url: 'load_dcmd',
 //    type: 'get', //this is the default though, you don't actually need to always mention it
 //    success: function(data) {
@@ -69,7 +52,6 @@ $(document).ready(function () {
 //        alert('Got an error dude');
 //    }
 //         });
-    });
 
 //    function parseData(data) {
 //        $.getJSON("ajax/test.json", function (data) {
