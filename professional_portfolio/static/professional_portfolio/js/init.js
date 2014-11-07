@@ -12,7 +12,9 @@ $(document).ready(function () {
     $('#dcmd_window').hide();
     $('#academic_window').hide();
         $('#skills_window').show();
+        $('#talent_window').show();
 
+      $(window).trigger('resize');
 });
 
 

@@ -26,31 +26,31 @@
 
 
     <div class="name_header">
-        <div id="cssmenu" style="float:right">
+        <div id="cssmenu" style="float:right; position:relative; top:10%; right:1%">
             <ul>
-                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Welcome</a></li>
+{#                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Welcome</a></li>#}
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Work</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group4">Talents</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group5">Contact</a></li>
             </ul>
         </div>
-        <div style="float:left; text-align: left">Jesse M Elfalan</div>
+        <div style="float:left; text-align:left; position:relative; left:1%">Jesse M Elfalan</div>
     </div>
 </div>
 
 <div class="slide_set">
 
 {#     Group1 - Welcome #}
-<div id="group1" class="parallax__group" style="max-width: 100%">
-    <div style="position: absolute; top:40%;left:35%; width:500px; height:300px ">
-        <div id="ekomomai">
-            <img src="{% static 'professional_portfolio/images/ekomomai.png' %}"></div>
-        <div id="welcome" style="position:absolute; left:28%"><img
-                src="{% static 'professional_portfolio/images/welcome.png' %}"></div>
-    </div>
+{#<div id="group1" class="parallax__group" style="max-width: 100%">#}
+{#    <div style="position: absolute; top:40%;left:35%; width:500px; height:300px ">#}
+{#        <div id="ekomomai">#}
+{#            <img src="{% static 'professional_portfolio/images/ekomomai.png' %}"></div>#}
+{#        <div id="welcome" style="position:absolute; left:28%"><img#}
+{#                src="{% static 'professional_portfolio/images/welcome.png' %}"></div>#}
+{#    </div>#}
     {#        <div class="centered_content" data-stellar-ratio="0.5" id="greeting_box" style="left:50%; top:60%"><strong>Please scroll down</strong></div>#}
-</div>
+{#</div>#}
 {#  Group2 - Introduction #}
 
 <div id="group2" class="parallax__group">
@@ -77,10 +77,13 @@
     </div>
 
     <div id="island_container" class="item"
-         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">
+{#         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">#}
+         style=" position:relative; max-width:1500px; height:100%">
         <div style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
             <img id="big_island" class="island">
         </div>
+{#       #}
+
         <div style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
             <img id="maui_molokai" class="island">
         </div>
@@ -101,7 +104,7 @@
 <div id="group3" class="parallax__group">
 
 
-    <div class="item" id="tabs" style="left:10%; top:15%">
+    <div class="item" id="tabs" style="left:5%; top:15%">
         <ul>
             <li><a id="tab1_anchor" href="#tabs-1">Technical Skills</a></li>
             <li><a id="tab2_anchor" href="#tabs-2">Grails Project</a></li>
@@ -134,7 +137,7 @@
                     <br>
 
                     Goal: To create a centralized meta data information management system <br>
-                    and improve upon data access and data entry for the University's staff members.<br>
+                    and improve upon data access and data entry for the University's technical staff.<br>
                     <br>
                     Development Platform: Grails<br>
                     <br>
@@ -161,7 +164,7 @@
                         Development Platform: Appcelerator
                     </p>
                     <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
-                        <div title="DCmd GitHub Repository" id="github_logo"
+                        <div title="Time Machine Github Repository" id="github_logo"
                              style="position:absolute; bottom:5%;right:45%; max-width: 100px;max-height: 100px;"></div>
                     </a>
                 </div>
@@ -175,7 +178,7 @@
                         Development Platform: Java, Swing
                     </p>
                     <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
-                        <div title="DCmd GitHub Repository" id="github_logo"
+                        <div title="ThemePark Github Repository" id="github_logo"
                              style="position:absolute; bottom:10%;right:45%; max-width: 100px;max-height: 100px;"></div>
                     </a>
                 </div>
@@ -184,14 +187,14 @@
     </div>
 
 
-    <div class="gallery item" id="skills_window" style="position:absolute; display:block; left:60%;top:17%">
-        <img src="{% static 'professional_portfolio/images/chart.png' %}"></div>
+    <div class="gallery item" id="skills_window" style="position:absolute; display:block; left:55%;top:14%">
+        <img style="box-shadow: 10px 10px 3px rgba(27, 27, 27, 0.38); " src="{% static 'professional_portfolio/images/chart.png' %}"></div>
 
 
     <div class="gallery item" id="dcmd_window"
-         style="height:600px;width:550px;position:absolute; display:block; left:60%;top:12%">
+         style="height:600px;width:550px;position:absolute;display:block; left:55%;top:12%">
 
-        <div class="photoset-grid-lightbox" data-layout="131" style="visibility: hidden">
+        <div class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
             <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}" width="300"
                  height="150"
                  data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
@@ -211,7 +214,7 @@
     </div>
 
     <div class="gallery item" id="academic_window"
-         style="position:absolute; width:600px; height:450px; background-color: whitesmoke; display:block; left:60%;top:20%">
+         style="position:absolute; width:600px; height:450px; background-color: whitesmoke; display:block; left:55%;top:20%">
         <div class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
             <img src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
                  data-highres="{% static 'professional_portfolio/images/academic_2.png' %}">
@@ -224,54 +227,36 @@
 
 
 </div>
-{#     DCmd   #}
-
-{#    <div id="group6" class="sub_group">#}
-{#    <div id="group6" class="parallax__group" style="display: hidden">#}
-{##}
-{#    </div>#}
-{##}
-{#     Others   #}
-{#    <div id="group7" class="sub_group">#}
-{##}
-{#    </div>#}
-
 
 {#     Group4 - Talents  #}
-
 <div id="group4" class="parallax__group">
-    <div class="text" id="talent_box">
-        <article>
+     <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
+        <div class="content_text">
             <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
                 my creative side.<br>
                 <br>
                 Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
                 I generally don't brag, but I've been told I make a pretty killer Pale Ale!
-
             </p>
-            <br>
-            <br>
-        </article>
+            </div>
         {#data-stellar-ratio="2"#}
     </div>
-    <div style="position:relative; left:15%; top:25%"><a><img id="beer"
-                                                              src="{% static 'professional_portfolio/images/beer_s.png' %}"></a>
-    </div>
 
-    <div class="gallery" id="talent_window" style=" display:inline-flex; top:40%">
-        <div class="photoset-grid-lightbox" data-layout="121" style="visibility: hidden">
-            <img src="{% static 'professional_portfolio/images/singing.png' %}" width="800" height="400"
+ <div class="gallery item" id="talent_window"
+         style="position:absolute; width:600px; height:420px; background-color: whitesmoke; display:block; left:55%;top:30%">
+        <div class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
+            <img src="{% static 'professional_portfolio/images/singing.png' %}" width="1280" height="660"
                  data-highres="{% static 'professional_portfolio/images/singing.png' %}">
-            <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="400" height="300"
-                 data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
-            <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="400" height="300"
-                 data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
-            <img src="{% static 'professional_portfolio/images/wine_rack.jpg' %}" width="600" height="800"
-                 data-highres="{% static 'professional_portfolio/images/wine_rack.jpg' %}">
+            <img src="{% static 'professional_portfolio/images/wine_rack_styled.png' %}" width="850" height="567"
+                 data-highres="{% static 'professional_portfolio/images/wine_rack_styled.png' %}">
+             <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="800" height="475"
+                 data-highres="{% static 'professional_portfolio/images/kabocha_c.png' %}">
+            <img src="{% static 'professional_portfolio/images/beer.JPG' %}" width="850" height="767"
+                 data-highres="{% static 'professional_portfolio/images/beer.JPG' %}">
+
 
 
         </div>
-
 
     </div>
 

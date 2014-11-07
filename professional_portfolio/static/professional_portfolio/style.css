@@ -9,7 +9,7 @@
     color: #fff;
     border-radius: 0 0 5px 5px;
     overflow: hidden;
-     height: 50px;
+     height: 60px;
 }
 
 .name_header {
@@ -18,34 +18,10 @@
     color: rgb(0, 152, 141);
     font: 60% / 1.5 Arial Rounded MT Bold;
     font-size: 40px;
-    height:45px;
+    height:55px;
 
 }
 
-#nav {
-    width: 620px;
-    height: 25px;
-    padding: 10px;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 75%;
-    margin-left: -320px;
-    background: #fff;
-    color: #000;
-    overflow: hidden;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-
-#nav li {
-    float: left;
-    padding: 0 5px;
-}
 
 /* Parallax base styles
 --------------------------------------------- */
@@ -198,6 +174,7 @@ body {
     z-index:0;
     /*background: url('images/napali2.jpeg');*/
     background: url('images/napali_coast_clr.jpeg');
+    /*background: url('images/napali_art.png');*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -205,17 +182,25 @@ body {
 #group2 {
     z-index: 0; /* slide under groups 1 and 3 */
     background: rgb(61, 196, 186);
-
+ /*background: url('images/turquoise_leaf.png');*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
 }
 
 #group3 {
     z-index: 0; /* slide over group 2 and 4 */
-    background: rgb(77, 120, 204);
+    /*background: rgb(77, 120, 204);*/
+ background: url('images/blue_styled.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 #group4 {
     z-index: 0; /* slide under group 3 and 5 */
-    background: rgb(255, 155, 79);
+    /*background: rgb(255, 155, 79);*/
+     background: url('images/orange.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -245,17 +230,21 @@ body {
     transform: scale(0.4,0.4);
 }
 #big_island{
-    content:url('images/islands/big_island.png');
+    content:url('images/islands/big_island_c.png');
         }
 #maui_molokai{
-    content:url('images/islands/maui_molokai.png');
+    content:url('images/islands/maui_molokai_c.png');
         }
 #oahu{
-    content:url('images/islands/oahu.png');
+    content:url('images/islands/oahu_c.png');
         }
 #kauai{
-    content:url('images/islands/kauai.png');
+    content:url('images/islands/kauai_c.png');
         }
+#big_cloud{
+    content:url('images/islands/cloud.png');
+    opacity:0.4 ;
+}
 
 
 
