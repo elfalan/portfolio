@@ -14,7 +14,7 @@ $(document).ready(function () {
         $('#skills_window').show();
         $('#talent_window').show();
 
-      $(window).trigger('resize');
+      $(window).trigger('resize');//gallery setup, needs to run script when window changes
 });
 
 
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
      $('#academic_window').hide();
      $('#dcmd_window').hide();
-     $('#skills_window').show();
+     $('#skills_window').fadeIn(700);
 
      $(window).trigger('resize');
  });
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
         $('#skills_window').hide();
         $('#academic_window').hide();
-        $('#dcmd_window').show();
+        $('#dcmd_window').fadeIn(700);
 
            $(window).trigger('resize');
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
 
          $('#skills_window').hide();
         $('#dcmd_window').hide();
-                $('#academic_window').show();
+                $('#academic_window').fadeIn(700);
 
              $(window).trigger('resize');
 

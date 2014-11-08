@@ -28,7 +28,7 @@
     <div class="name_header">
         <div id="cssmenu" style="float:right; position:relative; top:10%; right:1%">
             <ul>
-{#                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Welcome</a></li>#}
+                {#                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Welcome</a></li>#}
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group2">About</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group3">Work</a></li>
                 <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group4">Talents</a></li>
@@ -49,13 +49,13 @@
 {#        <div id="welcome" style="position:absolute; left:28%"><img#}
 {#                src="{% static 'professional_portfolio/images/welcome.png' %}"></div>#}
 {#    </div>#}
-    {#        <div class="centered_content" data-stellar-ratio="0.5" id="greeting_box" style="left:50%; top:60%"><strong>Please scroll down</strong></div>#}
+{#        <div class="centered_content" data-stellar-ratio="0.5" id="greeting_box" style="left:50%; top:60%"><strong>Please scroll down</strong></div>#}
 {#</div>#}
 {#  Group2 - Introduction #}
 
 <div id="group2" class="parallax__group">
 
-    <div class="item" data-stellar-ratio="2" style="position:absolute;top:20%;left:15%; width:550px;height:500px">
+    <div class="item" data-stellar-ratio="5" style="position:absolute;top:25%;left:15%; width:550px;height:500px">
         <p id="aloha_text"><strong>Aloha!</strong></p>
 
         <div class="content_text">
@@ -77,18 +77,22 @@
     </div>
 
     <div id="island_container" class="item"
-{#         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">#}
+            {#         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">#}
          style=" position:relative; max-width:1500px; height:100%">
-        <div data-stellar-ratio="5" style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
+        <div data-stellar-ratio="5"
+             style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
             <div id="big_island" class="island"></div>
         </div>
-        <div data-stellar-ratio="8" style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
+        <div data-stellar-ratio="8"
+             style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
             <div id="maui_molokai" class="island"></div>
         </div>
-        <div data-stellar-ratio="11" style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
+        <div data-stellar-ratio="11"
+             style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
             <div id="oahu" class="island"></div>
         </div>
-        <div data-stellar-ratio="15" style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
+        <div data-stellar-ratio="15"
+             style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
             <div id="kauai" class="island"></div>
         </div>
 
@@ -99,8 +103,9 @@
 {#     Group3 - projects  #}
 
 
-<div id="group3" class="parallax__group">
+<div id="group3" data-stellar-offset-parent="true" class="parallax__group">
 
+<div class="titles"> <p><strong>WORK | </strong></p></div>
 
     <div class="item" id="tabs" style="left:5%; top:15%">
         <ul>
@@ -186,7 +191,8 @@
 
 
     <div class="gallery item" id="skills_window" style="position:absolute; display:block; left:55%;top:14%">
-        <img style="box-shadow: 10px 10px 3px rgba(27, 27, 27, 0.38); " src="{% static 'professional_portfolio/images/chart.png' %}"></div>
+        <img style="box-shadow: 10px 10px 3px rgba(27, 27, 27, 0.38); "
+             src="{% static 'professional_portfolio/images/chart.png' %}"></div>
 
 
     <div class="gallery item" id="dcmd_window"
@@ -223,50 +229,67 @@
 
     </div>
 
-
 </div>
 
 {#     Group4 - Talents  #}
 <div id="group4" class="parallax__group">
-     <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
+<div class="titles"> <p><strong>TALENTS | </strong></p></div>
+
+    <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
         <div class="content_text">
             <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
                 my creative side.<br>
                 <br>
                 The hats I wear are of the Musician, Craftsman, Farmer, and Brewer.<br>
+                <br>
                 I generally don't brag, but I've been told I make a pretty killer Pale Ale!
             </p>
-            </div>
+        </div>
         {#data-stellar-ratio="2"#}
     </div>
 
- <div class="gallery item" id="talent_window"
+    <div class="gallery item" id="talent_window"
          style="position:absolute; width:600px; height:420px; border:20px #ffffff solid ;background-color: #ffffff; display:block; left:55%;top:30%">
         <div class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
             <img src="{% static 'professional_portfolio/images/singing.png' %}" width="1280" height="660"
                  data-highres="{% static 'professional_portfolio/images/singing.png' %}">
             <img src="{% static 'professional_portfolio/images/wine_rack_styled.png' %}" width="850" height="567"
                  data-highres="{% static 'professional_portfolio/images/wine_rack_styled.png' %}">
-             <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="800" height="475"
+            <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="800" height="475"
                  data-highres="{% static 'professional_portfolio/images/kabocha_c.png' %}">
             <img src="{% static 'professional_portfolio/images/beer_glass_trans.png' %}" width="850" height="767"
                  data-highres="{% static 'professional_portfolio/images/beer_glass_trans.png' %}">
         </div>
-         </div>
-
-{#<div class="item" style="position:relative; width:1500px; height:500px;" >#}
-{#              <div style="position: absolute; width:200px; height:200px;top:50%; left:20%; display:block">#}
-{#            <div id="beer" class="beer"></div>#}
-{#        </div>#}
-{#           </div>#}
-{#</div>#}
     </div>
+
+    {#<div class="item" style="position:relative; width:1500px; height:500px;" >#}
+    {#              <div style="position: absolute; width:200px; height:200px;top:50%; left:20%; display:block">#}
+    {#            <div id="beer" class="beer"></div>#}
+    {#        </div>#}
+    {#           </div>#}
+    {#</div>#}
+</div>
 
 {#     Group5 - Contact  #}
 {#    <div class="parallax" id="p_group5">#}
 
 <div id="group5" class="parallax__group">
-    <div class="text">Base Layer</div>
+<div class="titles"> <p><strong>CONTACT | </strong></p></div>
+       <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
+        <div class="content_text">
+            <p>My resume can be viewed here.</p><br>
+            <p>If you would like to get in touch I would love to hear from you!<br>
+                <br>
+               Please send an email me at this address.<br>
+               <br>
+              <p id="mahalo_text"><strong>Mahalo! </strong><br>
+             <strong>Thanks for Visiting!</strong></p>
+
+
+
+            </p>
+        </div>
+    </div>
 </div>
 </div>
 
