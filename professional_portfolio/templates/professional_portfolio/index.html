@@ -55,13 +55,13 @@
 
 <div id="group2" class="parallax__group">
 
-    <div class="item" style="position:absolute;top:20%;left:15%; width:550px;height:500px">
+    <div class="item" data-stellar-ratio="2" style="position:absolute;top:20%;left:15%; width:550px;height:500px">
         <p id="aloha_text"><strong>Aloha!</strong></p>
 
         <div class="content_text">
             <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
                 <br>
-                Originally from the Hawaiian Islands, I recently relocated to the<br>
+                Originally from the Islands of Hawaii, I recently relocated to the<br>
                 <strong>San Francisco Bay Area</strong> to seek out new and exciting opportunities.<br>
                 <br>
                 My areas of interests are <strong>Application Development</strong> and <strong>Web
@@ -79,19 +79,17 @@
     <div id="island_container" class="item"
 {#         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">#}
          style=" position:relative; max-width:1500px; height:100%">
-        <div style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
-            <img id="big_island" class="island">
+        <div data-stellar-ratio="5" style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
+            <div id="big_island" class="island"></div>
         </div>
-{#       #}
-
-        <div style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
-            <img id="maui_molokai" class="island">
+        <div data-stellar-ratio="8" style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
+            <div id="maui_molokai" class="island"></div>
         </div>
-        <div style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
-            <img id="oahu" class="island">
+        <div data-stellar-ratio="11" style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
+            <div id="oahu" class="island"></div>
         </div>
-        <div style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
-            <img id="kauai" class="island">
+        <div data-stellar-ratio="15" style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
+            <div id="kauai" class="island"></div>
         </div>
 
     </div>
@@ -192,7 +190,7 @@
 
 
     <div class="gallery item" id="dcmd_window"
-         style="height:600px;width:550px;position:absolute;display:block; left:55%;top:12%">
+         style="height:640px;width:550px;position:absolute;display:block; left:55%;top:12%; border:20px #ffffff solid ;background-color: #ffffff; ">
 
         <div class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
             <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}" width="300"
@@ -214,7 +212,7 @@
     </div>
 
     <div class="gallery item" id="academic_window"
-         style="position:absolute; width:600px; height:450px; background-color: whitesmoke; display:block; left:55%;top:20%">
+         style="position:absolute; width:600px; height:530px; background-color: whitesmoke; display:block; left:55%;top:18%; border:20px #ffffff solid ;background-color: #ffffff;">
         <div class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
             <img src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
                  data-highres="{% static 'professional_portfolio/images/academic_2.png' %}">
@@ -235,7 +233,7 @@
             <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
                 my creative side.<br>
                 <br>
-                Among the hats I wear are that of a Musician, Craftsman, Farmer, and Brewer.<br>
+                The hats I wear are of the Musician, Craftsman, Farmer, and Brewer.<br>
                 I generally don't brag, but I've been told I make a pretty killer Pale Ale!
             </p>
             </div>
@@ -243,7 +241,7 @@
     </div>
 
  <div class="gallery item" id="talent_window"
-         style="position:absolute; width:600px; height:420px; background-color: whitesmoke; display:block; left:55%;top:30%">
+         style="position:absolute; width:600px; height:420px; border:20px #ffffff solid ;background-color: #ffffff; display:block; left:55%;top:30%">
         <div class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
             <img src="{% static 'professional_portfolio/images/singing.png' %}" width="1280" height="660"
                  data-highres="{% static 'professional_portfolio/images/singing.png' %}">
@@ -251,24 +249,24 @@
                  data-highres="{% static 'professional_portfolio/images/wine_rack_styled.png' %}">
              <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="800" height="475"
                  data-highres="{% static 'professional_portfolio/images/kabocha_c.png' %}">
-            <img src="{% static 'professional_portfolio/images/beer.JPG' %}" width="850" height="767"
-                 data-highres="{% static 'professional_portfolio/images/beer.JPG' %}">
-
-
-
+            <img src="{% static 'professional_portfolio/images/beer_glass_trans.png' %}" width="850" height="767"
+                 data-highres="{% static 'professional_portfolio/images/beer_glass_trans.png' %}">
         </div>
+         </div>
 
+{#<div class="item" style="position:relative; width:1500px; height:500px;" >#}
+{#              <div style="position: absolute; width:200px; height:200px;top:50%; left:20%; display:block">#}
+{#            <div id="beer" class="beer"></div>#}
+{#        </div>#}
+{#           </div>#}
+{#</div>#}
     </div>
-
-</div>
 
 {#     Group5 - Contact  #}
 {#    <div class="parallax" id="p_group5">#}
 
 <div id="group5" class="parallax__group">
     <div class="text">Base Layer</div>
-
-
 </div>
 </div>
 

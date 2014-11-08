@@ -224,7 +224,7 @@ body {
 
 /***********************/
 /*image properties*/
-.island{
+.island, .beer{
     -ms-transform: scale(0.4,0.4); /* IE 9 */
     -webkit-transform: scale(0.4,0.4); /* Chrome, Safari, Opera */
     transform: scale(0.4,0.4);
@@ -255,9 +255,8 @@ body {
     content: url('images/GitHub-Mark-64px.png');
 }
 #beer{
-     -ms-transform: scale(0.3,0.3); /* IE 9 */
-    -webkit-transform: scale(0.3,0.3); /* Chrome, Safari, Opera */
-    transform: scale(0.3,0.3);
+    content:url('images/beer_glass_trans.png');
+
 }
 
 
