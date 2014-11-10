@@ -86,6 +86,20 @@
   -webkit-box-shadow: inset 0 5px 10px #133e40;
   box-shadow: inset 0 5px 10px #133e40;
 }
+ .navButton:active, .active{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background: #1e6468;
+  border: 1px solid #36b0b6;
+  -moz-box-shadow: inset 0 5px 10px #133e40;
+  -webkit-box-shadow: inset 0 5px 10px #133e40;
+  box-shadow: inset 0 5px 10px #133e40;
+}
+
 #cssmenu li:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

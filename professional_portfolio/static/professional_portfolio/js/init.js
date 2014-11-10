@@ -8,6 +8,8 @@ $(document).ready(function () {
         $("#tabs").tabs();
     });
 
+
+
 //    initialize project windows
     $('#dcmd_window').hide();
     $('#academic_window').hide();
@@ -15,6 +17,15 @@ $(document).ready(function () {
         $('#talent_window').show();
 
       $(window).trigger('resize');//gallery setup, needs to run script when window changes
+
+    $('#about_button').addClass('active');
+
+        $('.navButton').click(function() {
+            $('.navButton').removeClass('active');
+         $(this).addClass('active');
+        });
+
+
 });
 
 

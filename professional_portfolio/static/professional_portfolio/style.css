@@ -40,6 +40,13 @@
     margin:0 auto;
     display:block;
 }
+
+/*.stellar_object_container{*/
+    /*position:relative;*/
+    /*max-width:1500px;*/
+    /*height:100%*/
+/*}*/
+
 /*article {position:relative; max-width: 1000px; margin: 0 auto; height: 1000px; display: block; }*/
 /*article p {position: relative; z-index: 20}*/
 
@@ -132,7 +139,7 @@ body {
 
 }
 .titles p {
-    font: 40px / 1.5 Arial Rounded MT Bold;
+    font: 35px / 1.5 Arial;
     color: rgba(244, 244, 244, 0.50);
     position:absolute; top:8%; left:5%;
 }
@@ -188,7 +195,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#group2 {
+#about {
     z-index: 0; /* slide under groups 1 and 3 */
     background: rgb(61, 196, 186);
  /*background: url('images/turquoise_leaf.png');*/
@@ -196,7 +203,7 @@ body {
     /*background-repeat: no-repeat;*/
 }
 
-#group3 {
+#work {
     z-index: 0; /* slide over group 2 and 4 */
     /*background: rgb(77, 120, 204);*/
  background: url('images/blue_styled.png');
@@ -204,7 +211,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#group4 {
+#talents {
     z-index: 0; /* slide under group 3 and 5 */
     /*background: rgb(255, 155, 79);*/
      background: url('images/orange.png');
@@ -213,7 +220,7 @@ body {
 
 }
 
-#group5 {
+#contact{
     z-index: 0; /* slide over group 4 and 6 */
     background: rgb(255, 194, 79);
 
@@ -250,10 +257,6 @@ body {
 #kauai{
     content:url('images/islands/kauai_c.png');
         }
-#big_cloud{
-    content:url('images/islands/cloud.png');
-    opacity:0.4 ;
-}
 
 
 
