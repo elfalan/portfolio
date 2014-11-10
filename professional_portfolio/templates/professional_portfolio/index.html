@@ -186,15 +186,15 @@
                 </div>
             </div>
         </div>
-        {#        </div>#}
-        {#    container end#}
+
+
 <div id="gallery_group" data-stellar-ratio="3" style="position:absolute; left:55%;top:15%">
         <div class="gallery item" id="skills_window" style="position:absolute; display:block; left:55%;top:14%">
             <img style="box-shadow: 10px 10px 3px rgba(27, 27, 27, 0.38); "
                  src="{% static 'professional_portfolio/images/chart.png' %}"></div>
 
         <div class="gallery item" id="dcmd_window"
-             style="height:640px;width:550px;position:absolute;display:block; left:55%;top:12%; border:20px #ffffff solid ;background-color: #ffffff; ">
+             style="height:640px;width:550px;position:absolute;display:block; left:55%;top:12%; border:20px #ffffff solid ;background-color: #545454; ">
 
             <div class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
                 <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}" width="300"
@@ -234,33 +234,35 @@
 <div id="talents" class="parallax__group">
     <div class="titles"><p><strong>TALENTS | </strong></p></div>
 
-    <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
+        <div id="tabs_container" class="item" style=" position:relative; max-width:1500px; height:100%">
+
+    <div class="item" style="position:absolute; width:550px;height:500px; top:40%; left:5%">
         <div class="content_text">
             <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
                 my creative side.<br>
                 <br>
-                The hats I wear are of the Musician, Craftsman, Farmer, and Brewer.<br>
+                The other hats I wear are of a Musician, Craftsman, Farmer, and Brewer.<br>
                 <br>
                 I generally don't brag, but I've been told I make a pretty killer Pale Ale!
             </p>
         </div>
-        {#data-stellar-ratio="2"#}
-    </div>
+        </div>
 
-    <div class="gallery item" id="talent_window"
-         style="position:absolute; width:600px; height:420px; border:20px #ffffff solid ;background-color: #ffffff; display:block; left:55%;top:30%">
+
+    <div class="gallery item wood_frame" id="talent_window"
+         style="position:absolute; width:600px; height:520px; background-color: #ffffff; display:block; left:45%;top:15%">
         <div class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
-            <img src="{% static 'professional_portfolio/images/singing.png' %}" width="1280" height="660"
-                 data-highres="{% static 'professional_portfolio/images/singing.png' %}">
-            <img src="{% static 'professional_portfolio/images/wine_rack_styled.png' %}" width="850" height="567"
+            <img src="{% static 'professional_portfolio/images/singing.png' %}" width="1280" height="550"
+                 data-highres="{% static 'professional_portfolio/images/singing_crop.png' %}">
+            <img src="{% static 'professional_portfolio/images/wine_rack_thumb.png' %}" width="100" height="200"
                  data-highres="{% static 'professional_portfolio/images/wine_rack_styled.png' %}">
-            <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="800" height="475"
+            <img src="{% static 'professional_portfolio/images/kabocha_c.png' %}" width="130" height="200"
                  data-highres="{% static 'professional_portfolio/images/kabocha_c.png' %}">
-            <img src="{% static 'professional_portfolio/images/beer_glass_trans.png' %}" width="850" height="767"
+            <img src="{% static 'professional_portfolio/images/beer_glass_trans.png' %}" width="100" height="200"
                  data-highres="{% static 'professional_portfolio/images/beer_glass_trans.png' %}">
         </div>
-    </div>
-
+         </div>
+</div>
 </div>
 
 {#     Group5 - Contact  #}
@@ -273,7 +275,7 @@
 
             <p>If you would like to get in touch I would love to hear from you!<br>
                 <br>
-                Please send an email me at this address.<br>
+                Please email me at this address.<br>
                 <br>
 
             <p id="mahalo_text"><strong>Mahalo! </strong><br>
