@@ -142,11 +142,13 @@
                         <br>
                         Development Platform: Grails<br>
                         <br>
-                        Project Role/Duration: Developer, 2011-2014
+                        Project Role/Duration: Developer, 2011-2014<br>
+                        <br>
+                        Code is viewable at:
                     </p>
                     <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
                         <div title="DCmd GitHub Repository" id="github_logo"
-                             style="position:absolute; bottom:38%;right:35%; max-width: 100px;max-height: 100px;"></div>
+                             style="position:absolute; bottom:29.8%;right:64%; max-width: 100px;max-height: 100px;"></div>
                     </a>
                 </div>
             </div>
@@ -163,10 +165,11 @@
                             time period based on what was popular on the radio at the time.<br>
                             <br>
                             Development Platform: Appcelerator
+
                         </p>
-                        <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
-                            <div title="Time Machine Github Repository" id="github_logo"
-                                 style="position:absolute; bottom:5%;right:45%; max-width: 100px;max-height: 100px;"></div>
+                        <a href="https://code.google.com/p/ics414-time-machine-radio/source/browse/" target="_blank">
+                            <div title="Time Machine Google Code Repository" id="google_logo"
+                                 style="position:absolute; bottom:2%;right:40%; max-width: 100px;max-height: 100px;"></div>
                         </a>
                     </div>
                     <div style="position:relative; height:250px;width:650px">
@@ -180,9 +183,9 @@
                             <br>
                             Development Platform: Java, Swing
                         </p>
-                        <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
-                            <div title="ThemePark Github Repository" id="github_logo"
-                                 style="position:absolute; bottom:10%;right:45%; max-width: 100px;max-height: 100px;"></div>
+                        <a href="https://code.google.com/p/ics311-scheduler/source/browse/" target="_blank">
+                            <div title="ThemePark Google Code Repository" id="google_logo"
+                                 style="position:absolute; bottom:5%;right:40%; max-width: 100px;max-height: 100px;"></div>
                         </a>
                     </div>
                 </div>
@@ -195,33 +198,37 @@
             <img style="box-shadow: 10px 10px 3px rgba(27, 27, 27, 0.38); "
                  src="{% static 'professional_portfolio/images/chart.png' %}"></div>
 
-        <div class="gallery item" id="dcmd_window"
-             style="height:640px;width:550px;position:absolute;display:block; left:55%;top:12%; border:20px #ffffff solid ;background-color: #545454; ">
+        <div class="gallery item black_matte_frame" id="dcmd_window"
+             style="height:490px;width:500px;position:absolute;display:block; left:55%;top:5%; background-color: #545454; ">
 
-            <div class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}" width="300"
-                     height="150"
+            <div id="dcmd_gallery" class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.png' %}" width="100"
+                     height="40"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
-                <img src=" {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}"
-                     width="175" height="100"
+
+                <img src=" {% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img2_thumb.png' %}"
+                     width="100" height="60"
                      data-highres=" {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}">
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}" width="175"
-                     height="100"
+
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img3_thumb.png' %}" width="100"
+                     height="60"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}">
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}" width="175"
-                     height="100"
+
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack1_thumb.png' %}" width="100"
+                     height="60"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}">
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}" width="300"
-                     height="150"
+
+                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.png' %}" width="100"
+                     height="40"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack2.PNG' %}">
             </div>
         </div>
 
-        <div class="gallery item" id="academic_window"
-             style="position:absolute; width:600px; height:530px; background-color: whitesmoke; display:block; left:55%;top:20%; border:20px #ffffff solid ;background-color: #ffffff;">
-            <div class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
+        <div class="gallery item black_matte_frame" id="academic_window"
+             style="position:absolute; width:500px; height:450px; background-color: whitesmoke; display:block; left:55%;top:20% ;background-color: #ffffff;">
+            <div id="academic_gallery" class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
                 <img src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
-                     data-highres="{% static 'professional_portfolio/images/academic_2.png' %}">
+                     data-highres="{% static 'professional_portfolio/images/tmr_2.png' %}">
                 <img src="{% static 'professional_portfolio/images/academic_1.png' %}" width="500" height="300"
                      data-highres="{% static 'professional_portfolio/images/academic_1.png' %}">
 
@@ -233,7 +240,7 @@
 
 
 {#     Group4 - Talents  #}
-<div id="talents" class="parallax__group">
+<div  id="talents" class="parallax__group">
     <div class="titles"><p><strong>TALENTS | </strong></p></div>
 
         <div id="tabs_container" class="item" style=" position:relative; max-width:1500px; height:100%">
@@ -253,7 +260,7 @@
 
     <div class="gallery item wood_frame" id="talent_window"
          style="position:absolute; width:600px; height:454px; background-color: #2e2e2e; display:block; left:45%;top:20%">
-        <div class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
+        <div id="talent_gallery" class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
             <img src="{% static 'professional_portfolio/images/singing_crop.png' %}" width="1280" height="550"
                  data-highres="{% static 'professional_portfolio/images/singing_crop.png' %}">
             <img src="{% static 'professional_portfolio/images/wine_rack_thumb.png' %}" width="100" height="200"

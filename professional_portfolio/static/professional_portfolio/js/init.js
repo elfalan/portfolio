@@ -124,25 +124,75 @@ smoothScroll.init({
 /************************
  * picture gallery
  */
-$(window).on('resize',function(){
+$(window).on('resize',function() {
 
-$('.photoset-grid-lightbox').photosetGrid({
-  highresLinks: true,
-  rel: 'withhearts-gallery',
-  gutter: '2px',
+//$('.photoset-grid-lightbox').photosetGrid({
+//  highresLinks: true,
+//  rel: 'withhearts-gallery',
+//  gutter: '2px',
+//
+//  onComplete: function(){
+//    $('.photoset-grid-lightbox').attr('style', '');
+//    $('.photoset-grid-lightbox a').colorbox({
+//      photo: true,
+//      scalePhotos: true,
+//      maxHeight:'90%',
+//      maxWidth:'90%'
+//    });
+//  }
+//});
 
-  onComplete: function(){
-    $('.photoset-grid-lightbox').attr('style', '');
-    $('.photoset-grid-lightbox a').colorbox({
-      photo: true,
-      scalePhotos: true,
-      maxHeight:'90%',
-      maxWidth:'90%'
+
+    $('#dcmd_gallery').photosetGrid({
+        highresLinks: true,
+        rel: 'dcmd_gallery',
+        gutter: '2px',
+
+        onComplete: function () {
+            $('#dcmd_gallery').attr('style', '');
+            $('.photoset-grid-lightbox a').colorbox({
+                photo: true,
+                scalePhotos: true,
+                maxHeight: '90%',
+                maxWidth: '90%'
+            });
+        }
     });
-  }
+
+    $('#academic_gallery').photosetGrid({
+        highresLinks: true,
+        rel: 'academic_gallery',
+        gutter: '2px',
+
+        onComplete: function () {
+            $('#academic_gallery').attr('style', '');
+            $('.photoset-grid-lightbox a').colorbox({
+                photo: true,
+                scalePhotos: true,
+                maxHeight: '90%',
+                maxWidth: '90%'
+            });
+        }
+    });
+
+    $('#talent_gallery').photosetGrid({
+        highresLinks: true,
+        rel: 'talent_gallery',
+        gutter: '2px',
+
+        onComplete: function () {
+            $('#talent_gallery').attr('style', '');
+            $('.photoset-grid-lightbox a').colorbox({
+                photo: true,
+                scalePhotos: true,
+                maxHeight: '90%',
+                maxWidth: '90%'
+            });
+        }
+
+
+    });
 });
-
-    });
 
 
 /**************************
