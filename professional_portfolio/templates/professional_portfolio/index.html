@@ -29,19 +29,19 @@
         <div id="cssmenu" style="float:right; position:relative; top:10%; right:1%">
             <ul>
                 {#                <li><a data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#group1">Welcome</a></li>#}
-                <li><a id="about_nav" class="navButton" data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#about">About</a></li>
+                <li><a id="about_nav" class="navButton" data-scroll href="#about">About</a></li>
 
-                <li><a id="work_nav" class="navButton" data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#work">Work</a>
+                <li><a id="work_nav" class="navButton" data-scroll  href="#work_title">Work</a>
                 </li>
 
-                <li><a id="talents_nav" class="navButton" data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#talents">Talents</a>
+                <li><a id="talents_nav" class="navButton" data-scroll  href="#talents">Talents</a>
                 </li>
 
-                <li><a id="contact_nav" class="navButton" data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#contact">Contact</a>
+                <li><a id="contact_nav" class="navButton" data-scroll  href="#contact">Contact & Resume</a>
                 </li>
 
-                <li><a class="navButton" data-scroll data-options='{ "easing": "easeInOutQuint" }' href="#contact">Resume/CV</a>
-                </li>
+{#                <li><a class="navButton" data-scroll  href="https://drive.google.com/file/d/0ByaTth8gFd30Y0tLQzd3QnZQSUE/view?usp=sharing" target="_blank">Resume/CV</a>#}
+{#                </li>#}
             </ul>
         </div>
         <div style="float:left; text-align:left; position:relative; left:1%">Jesse M Elfalan</div>
@@ -52,21 +52,22 @@
 
 
 <div id="about" class="parallax__group">
-    <div id="about_title" class="titles"><p><strong>ABOUT | </strong></p></div>
+    <div class="style_bar"></div>
+    <div id="about_title" class="titles"><p><strong>ABOUT</strong></p></div>
 
-    <div class="item" data-stellar-ratio="5" style="position:absolute;top:25%;left:15%; width:550px;height:500px">
+    <div class="item" data-stellar-ratio="2" style="position:absolute;top:25%;left:15%; width:550px;height:500px">
         <p id="aloha_text"><strong>Aloha!</strong></p>
 
         <div class="content_text">
             <p>My name is <strong>Jesse Elfalan</strong> and I am a <strong>Software Developer</strong>.<br>
                 <br>
                 Originally from the Islands of Hawaii, I've recently relocated to the<br>
-                <strong>San Francisco Bay Area</strong> to seek out new and exciting opportunities.<br>
+                <strong>San Francisco Bay Area</strong> to seek new and exciting opportunities.<br>
                 <br>
                 My areas of interests are <strong>Application Development</strong> and <strong>Web
                     Design</strong>,<br>
                 however it is important to me that I continue to expand and hone my <br>
-                skill set, and so have an open mind and do not limit myself to just these areas.<br>
+                skill set, and so therefore I am always looking to learn.<br>
                 <br>
                 Please feel free to peruse this site to find out more about me.
                 <br>
@@ -78,19 +79,19 @@
     <div id="island_container" class="item"
             {#         style=" border:2px solid black;position:relative; max-width:1500px; height:100%">#}
          style=" position:relative; max-width:1500px; height:100%">
-        <div data-stellar-ratio="5"
+        <div data-stellar-ratio="2"
              style="position: absolute; width:200px; height:200px;bottom:45%; right:20%; display:block">
             <div id="big_island" class="island"></div>
         </div>
-        <div data-stellar-ratio="8"
+        <div data-stellar-ratio="3"
              style="position: absolute; width:200px; height:200px;bottom:55%; right:36%; display:block">
             <div id="maui_molokai" class="island"></div>
         </div>
-        <div data-stellar-ratio="11"
+        <div data-stellar-ratio="6"
              style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
             <div id="oahu" class="island"></div>
         </div>
-        <div data-stellar-ratio="15"
+        <div data-stellar-ratio="13"
              style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
             <div id="kauai" class="island"></div>
         </div>
@@ -104,8 +105,8 @@
 
 
 <div id="work" class="parallax__group">
-
-    <div id="work_title" class="titles"><p><strong>WORK | </strong></p></div>
+    <div class="style_bar"></div>
+    <div id="work_title" class="titles"><p><strong>WORK</strong></p></div>
 
     <div id="tabs_container" class="item" style=" position:relative; max-width:1500px; height:100%; top:2%">
 
@@ -120,13 +121,13 @@
                     <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">Overview</p>
 
                     <p>I have experience developing on the <strong>Full Stack</Strong>, and I am skilled in a number
-                        of<br>
-                        languages and technologies. Some of these include:<br>
+                        of
+                        languages and technologies.Some of these include:<br>
                         <br>
                         <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
                         <br>
-                        I also enjoy exploring other languages and I am currently learning <br>
-                        the <strong>Django/Python</strong> framework. This site was developed using<br>
+                        I enjoy exploring other languages and I am currently learning
+                        the <strong>Django/Python</strong> framework. This site was developed using
                         django as practice!<br>
                         <br>
                         <strong>Please click the tabs to find out more about projects I've worked on.</strong>
@@ -137,22 +138,22 @@
                 <div class="tab_text" style="position:relative">
                     <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">DCmd (Data Center Meta Data)</p><br>
 
-                    <p>Description: A Data Information Management <Strong>Web Application</Strong> developed <br>
+                    <p>Description: A Data Information Management <Strong>Web Application</Strong> developed
                         for the University of Hawaii's Information Technology Center.<br>
                         <br>
 
-                        Goal: To create a centralized meta data information management system <br>
+                        Goal: To create a centralized meta data information management system
                         and improve upon data access and data entry for the University's technical staff.<br>
                         <br>
                         Development Platform: Grails<br>
                         <br>
                         Project Role/Duration: Developer, 2011-2014<br>
                         <br>
-                        Code is viewable at:
+                        Code viewable on
                     </p>
                     <a href="https://github.com/UHMDCmd/DCmd" target="_blank">
                         <div title="DCmd GitHub Repository" id="github_logo"
-                             style="position:absolute; bottom:29.8%;right:64%; max-width: 100px;max-height: 100px;"></div>
+                             style="position:absolute; bottom:29.8%;right:67%; max-width: 100px;max-height: 100px;"></div>
                     </a>
                 </div>
             </div>
@@ -162,10 +163,10 @@
                     <div style="position:relative; height:300px;width:650px">
                         <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">Time Machine Radio (ipad App)</p>
 
-                        <p>Description: A music radio application that creates a customized music station<br>
+                        <p>Description: A music radio application that creates a customized music station
                             based on the user's selection of Genre and time period.<br>
                             <br>
-                            Goal: To create a listening experience that transports the user to a different<br>
+                            Goal: To create a listening experience that transports the user to a different
                             time period based on what was popular on the radio at the time.<br>
                             <br>
                             Development Platform: Appcelerator
@@ -173,7 +174,7 @@
                         </p>
                         <a href="https://code.google.com/p/ics414-time-machine-radio/source/browse/" target="_blank">
                             <div title="Time Machine Google Code Repository" id="google_logo"
-                                 style="position:absolute; bottom:2%;right:40%; max-width: 100px;max-height: 100px;"></div>
+                                 style="position:absolute; bottom:2%;right:40%; width: 100px;height: 70px;background-color: rgba(255, 255, 255, 0.15); border-radius: 5px"></div>
                         </a>
                     </div>
                     <div style="position:relative; height:250px;width:650px">
@@ -181,7 +182,7 @@
                             Applet</p>
 
                         <p>Description: A Java applet that takes in a users selection of theme park attractions
-                            and<br>
+                            and
                             outputs an optimized schedule based on the distance between each attraction and
                             availability.<br>
                             <br>
@@ -189,7 +190,7 @@
                         </p>
                         <a href="https://code.google.com/p/ics311-scheduler/source/browse/" target="_blank">
                             <div title="ThemePark Google Code Repository" id="google_logo"
-                                 style="position:absolute; bottom:5%;right:40%; max-width: 100px;max-height: 100px;"></div>
+                                 style="position:absolute; bottom:10%;right:40%; width: 100px;height: 70px;background-color: rgba(255, 255, 255, 0.15); border-radius: 5px"></div>
                         </a>
                     </div>
                 </div>
@@ -244,8 +245,9 @@
 
 
 {#     Group4 - Talents  #}
-<div  id="talents" class="parallax__group">
-    <div id="talents_title" class="titles"><p><strong>TALENTS | </strong></p></div>
+<div  id="talents" class="parallax__group" style="z-index:3">
+        <div class="style_bar"></div>
+    <div id="talents_title" class="titles"><p><strong>TALENTS</strong></p></div>
 
         <div id="tabs_container" class="item" style=" position:relative; max-width:1500px; height:100%">
 
@@ -254,7 +256,7 @@
             <p>Aside from writing code, I also enjoy exploring talents that help stimulate<br>
                 my creative side.<br>
                 <br>
-                The hats I wear are of a Musician, Craftsman, Farmer, and Brewer.<br>
+                The hats I wear are of a Musician, WoodWorker, Farmer, and Brewer.<br>
                 <br>
                 I generally don't brag, but I've been told I make a pretty killer Pale Ale!
             </p>
@@ -281,18 +283,23 @@
 {#     Group5 - Contact  #}
 
 <div id="contact" class="parallax__group">
-    <div id="contact_title" class="titles"><p><strong>CONTACT | </strong></p></div>
-    <div class="item" style="position:absolute;top:40%;left:15%; width:550px;height:500px">
-        <div class="content_text">
-            <p>My resume can be viewed <a href=""></a>here.</p><br>
-
-            <p>If you would like to get in touch I would love to hear from you!<br>
-                <br>
-                Please email me at this address.<br>
-                <br>
-
-            <p id="mahalo_text"><strong>Mahalo! </strong><br>
-                <strong>Thanks for Visiting!</strong></p>
+        <div class="style_bar"></div>
+    <div id="contact_title" class="titles"><p><strong>CONTACT</strong></p></div>
+    <div data-stellar-ratio="0.5" class="item" style="position:absolute;top:40%;left:30%; width:800px;height:500px; z-index:2">
+        <div class="content_text" style="text-align:center;display: block">
+            <p>My <strong>resume</strong> can be viewed <a id="resume_link" href="https://drive.google.com/file/d/0ByaTth8gFd30Y0tLQzd3QnZQSUE/view?usp=sharing" target="_blank"><strong>Here</strong>.</a><br>
+            <br>
+            If you would like to get in touch I would love to hear from you!<br>
+            <br>
+            You can connect with me via email or drop me a message on linkedin.
+            <div style="width:100px; height:44px; position:relative; left:45%; top:50%">
+            <a href="http://www.linkedin.com/pub/jesse-elfalan/90/ab2/138/" target="_blank"><div title="View my profile here!" id ="linkedin"></div></a>
+            <a href="mailto:jeselfalan@gmail.com"><div title="jeselfalan@gmail.com" id ="gmail"> </div></a>
+            </div>
+            </p>
+            <br>
+            <p>
+            <div id="mahalo_text"><strong>Aloha & Thanks for Visiting!</strong></div></p>
 
         </div>
     </div>

@@ -17,19 +17,21 @@ $(document).ready(function () {
 
     $(window).trigger('resize');//gallery setup, needs to run script when window changes
 
-    $('#about_button').addClass('active');
+   // $('#about_button').addClass('active');
 
-//    initialize nav bar
-    $('.navButton').click(function () {
+//nav button click
+    $('.navButton').click(function() {
+           $('.navButton').removeClass('active');
+           $(this).addClass('active');
 
-        $('.navButton').removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });
 
     //nav waypoints
     $('#about').waypoint(function () {
-  $('#about_nav').trigger('click');
+        $('.navButton').removeClass('active');
+        $('#about_nav').addClass('active');
+//        $('#about_nav').trigger('click');
     }, {
   offset: function() {
     return -$(this).height()/4;
@@ -37,24 +39,41 @@ $(document).ready(function () {
 });
 
     $('#work').waypoint(function () {
-        $('#work_nav').trigger('click');
+             $('.navButton').removeClass('active');
+        $('#work_nav').addClass('active');
+//        $('#work_nav').trigger('click');
     },
-        {offset: 'bottom-in-view'});
+        {offset: '0'});
 
 
     $('#talents').waypoint(function () {
-//  alert('70 pixels from the top');
-        $('#talents_nav').trigger('click');
-    },   {offset: function() {
-    return -$(this).height()/4;
-  }
-});
+//    $('#talents_nav').trigger('click');
+         $('.navButton').removeClass('active');
+        $('#talents_nav').addClass('active');
+    }, {offset: '0'});
+
 
     $('#contact').waypoint(function () {
-//  alert('70 pixels from the top');
-     $('#contact_nav').trigger('click');
+//     $('#contact_nav').trigger('click');
+         $('.navButton').removeClass('active');
+        $('#contact_nav').addClass('active');
     }, {offset: '0'});
 });
+
+ function disableWayPoints(){
+          $('#about').waypoint('disable');
+            $('#work').waypoint('disable');
+            $('#talents').waypoint('disable');
+            $('#contact').waypoint('disable');
+    }
+
+    function enableWaypoints(){
+         $('#about').waypoint('enable');
+            $('#work').waypoint('enable');
+            $('#talents').waypoint('enable');
+            $('#contact').waypoint('enable');
+    }
+
 
 
 //tab animation and gallery displays
@@ -62,7 +81,7 @@ $('#tab1_anchor').click(function () {
 
     $('#academic_window').hide();
     $('#dcmd_window').hide();
-    $('#skills_window').fadeIn(700);
+    $('#skills_window').fadeIn(600);
 
     $(window).trigger('resize');
 });
@@ -71,7 +90,7 @@ $('#tab2_anchor').click(function () {
 
     $('#skills_window').hide();
     $('#academic_window').hide();
-    $('#dcmd_window').fadeIn(700);
+    $('#dcmd_window').fadeIn(600);
 
     $(window).trigger('resize');
 
@@ -82,7 +101,7 @@ $('#tab3_anchor').click(function () {
 
     $('#skills_window').hide();
     $('#dcmd_window').hide();
-    $('#academic_window').fadeIn(700);
+    $('#academic_window').fadeIn(600);
 
     $(window).trigger('resize');
 
@@ -139,8 +158,8 @@ $.stellar({
 /*************************/
 //animated scrolling
 smoothScroll.init({
-    speed: 800,
-    easing: 'easeInOutCubic',
+    speed: 600,
+    easing: 'easeInOutQuad',
     offset: 0,
     updateURL: true,
     callbackBefore: function (toggle, anchor) {
