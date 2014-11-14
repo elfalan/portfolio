@@ -125,6 +125,9 @@ body {
 -webkit-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 }
+.under{
+    text-decoration: underline;
+}
 
 
 .gallery {
@@ -159,7 +162,7 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 .content_text {
    font: 60% / 1.5 Arial Narrow;
    font-size: 20px;
-   color: rgba(232, 253, 255, 0.64);
+   color: rgba(220, 239, 241, 0.64);
    text-align: left;
 
 }
