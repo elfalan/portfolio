@@ -8,6 +8,23 @@ $(document).ready(function () {
         $("#tabs").tabs();
     });
 
+    var home = '#oahu';
+//    tool tip styling
+    $('[title]').qtip({
+        style:{classes:'qtip-tipsy' }
+    });
+
+    $(home).mouseover(function() {
+        $(this).effect('bounce', {distance:10}, 100);
+    });
+
+            $(home).qtip({
+                content: {
+                    text: 'My Home!'
+                },
+                style:{classes:'qtip-green qtip-rounded'},
+                position:{target:'mouse'}
+            });
 
 //    initialize project windows
     $('#dcmd_window').hide();

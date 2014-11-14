@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery-ui.theme.min.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/colorbox.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/nav.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'professional_portfolio/jquery.qtip.min.css' %}"/>
 
 
 <html>
@@ -65,9 +66,9 @@
                 <strong>San Francisco Bay Area</strong> to seek new and exciting opportunities.<br>
                 <br>
                 My areas of interests are <strong>Application Development</strong> and <strong>Web
-                    Design</strong>,<br>
-                however it is important to me that I continue to expand and hone my <br>
-                skill set, and so therefore I am always looking to learn.<br>
+                    Design</strong>.<br>
+                However, it is important to me that I continue to expand and hone my <br>
+                skill set and so therefore I am always looking to learn.<br>
                 <br>
                 Please feel free to peruse this site to find out more about me.
                 <br>
@@ -89,7 +90,7 @@
         </div>
         <div data-stellar-ratio="6"
              style="position: absolute; width:200px; height:200px;bottom:62%; right:40%; display:block">
-            <div id="oahu" class="island"></div>
+            <div  id="oahu" class="island"></div>
         </div>
         <div data-stellar-ratio="13"
              style="position: absolute; width:200px; height:200px;bottom:68%; right:60%; display:block">
@@ -127,10 +128,10 @@
                         <strong>Grails, Java, Javascript, Jquery, Html, CSS, Ajax, Json</strong><br>
                         <br>
                         I also enjoy exploring new languages and I am currently learning
-                        the <strong>Django/Python</strong> framework. This site was developed using
-                        django as practice!<br>
+                        the <strong>Django/Python</strong> framework. This site was developed on
+                        <strong>Django</strong> as practice!<br>
                         <br>
-                        <strong>Please click the tabs to find out more about projects I've worked on.</strong>
+                        <strong>Please click on the tabs to see the projects I've worked on.</strong>
                     </p>
                 </div>
             </div>
@@ -138,16 +139,16 @@
                 <div class="tab_text" style="position:relative">
                     <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">DCmd (Data Center Meta Data)</p><br>
 
-                    <p><strong class="under">Description:</strong> A Data Information Management <Strong>Web Application</Strong> developed
+                    <p><strong class="under">Description:</strong>  A Data Information Management <Strong>Web Application</Strong> developed
                         for the University of Hawaii's Information Technology Center.<br>
                         <br>
 
-                        <strong class="under">Goal:</strong> To create a centralized meta data information management system
+                        <strong class="under">Goal:</strong>  To create a centralized meta data information management system
                         and improve upon data access and data entry for the University's technical staff.<br>
                         <br>
-                        <strong class="under">Development Platform:</strong> Grails<br>
+                        <strong class="under">Development Platform:</strong>  Grails, Jquery, Javascript<br>
                         <br>
-                        <strong class="under">Project Role:</strong> Developer, 2011-2014<br>
+                        <strong class="under">Project Role:</strong>  Developer, 2011-2014<br>
                         <br>
                         Code viewable on
                     </p>
@@ -173,23 +174,21 @@
 
                         </p>
                         <a href="https://code.google.com/p/ics414-time-machine-radio/source/browse/" target="_blank">
-                            <div title="Time Machine Google Code Repository" id="google_logo"
-                                 style="position:absolute; bottom:2%;right:40%; width: 100px;height: 70px;background-color: rgba(255, 255, 255, 0.15); border-radius: 5px"></div>
+                            <div title="Time Machine Radio Google Code Repository" id="google_logo"
+                                 style="position:absolute; bottom:11%;right:26%; background-color: rgba(255, 255, 255, 0.31); border-radius: 5px"></div>
                         </a>
                     </div>
                     <div style="position:relative; height:250px;width:650px">
-                        <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">Theme Park Scheduler Java
-                            Applet</p>
+                        <p style="font-size:40px; color:rgba(255, 244, 43, 0.67)">Theme Park Scheduler (Java Applet)</p>
 
                         <p><strong class="under">Description:</strong> A Java applet that takes in a user's selection of theme park attractions
-                            and
-                            outputs an optimized schedule based upon a combination of shortest path and scheduling algorithms.<br>
+                            and outputs an optimized time schedule, utilizing a combination of shortest path and scheduling algorithms.<br>
                             <br>
                             <strong class="under">Development Platform:</strong> Java, Swing
                         </p>
-                        <a href="https://code.google.com/p/ics311-scheduler/source/browse/" target="_blank">
-                            <div title="ThemePark Google Code Repository" id="google_logo"
-                                 style="position:absolute; bottom:10%;right:40%; width: 100px;height: 70px;background-color: rgba(255, 255, 255, 0.15); border-radius: 5px"></div>
+                        <a href="https://github.com/elfalan/ics-311scheduler" target="_blank">
+                            <div title="Theme Park Scheduler Github Repository" id="github_logo"
+                                 style="position:absolute; bottom:15%;right:45%;max-width: 100px;max-height: 100px; "></div>
                         </a>
                     </div>
                 </div>
@@ -206,19 +205,19 @@
              style="height:490px;width:500px;position:absolute;display:block; left:55%;top:5%; background-color: #545454; ">
 
             <div id="dcmd_gallery" class="photoset-grid-lightbox" data-layout="131" style="visibility:visible;">
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.png' %}" width="100"
+                <img title="Main grid view" src="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.png' %}" width="100"
                      height="40"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img1.PNG' %}">
 
-                <img src=" {% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img2_thumb.png' %}"
+                <img title="Grid view with dark theme" src=" {% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img2_thumb.png' %}"
                      width="100" height="60"
                      data-highres=" {% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img2.png' %}">
 
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img3_thumb.png' %}" width="100"
+                <img title="Edit/update view of an Asset" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/grid_img3_thumb.png' %}" width="100"
                      height="60"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/grid_img3.PNG' %}">
 
-                <img src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack1_thumb.png' %}" width="100"
+                <img title="Edit View of a Rack" src="{% static 'professional_portfolio/images/dcmd_screens/thumbs/rack1_thumb.png' %}" width="100"
                      height="60"
                      data-highres="{% static 'professional_portfolio/images/dcmd_screens/full_size/rack_img1.PNG' %}">
 
@@ -231,9 +230,9 @@
         <div class="gallery item black_matte_frame" id="academic_window"
              style="position:absolute; width:500px; height:450px; background-color: whitesmoke; display:block; left:55%;top:20% ;background-color: #ffffff;">
             <div id="academic_gallery" class="photoset-grid-lightbox" data-layout="11" style="visibility: hidden">
-                <img src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
+                <img title="Time machine radio screen shot" src="{% static 'professional_portfolio/images/academic_2.png' %}" width="500" height="300"
                      data-highres="{% static 'professional_portfolio/images/tmr_2.png' %}">
-                <img src="{% static 'professional_portfolio/images/academic_1.png' %}" width="500" height="300"
+                <img title="Theme Park Scheduler Applet" src="{% static 'professional_portfolio/images/academic_1.png' %}" width="500" height="300"
                      data-highres="{% static 'professional_portfolio/images/academic_1.png' %}">
 
             </div>
@@ -266,13 +265,13 @@
     <div class="gallery item wood_frame" id="talent_window"
          style="position:absolute; width:600px; height:454px; background-color: #2e2e2e; display:block; left:45%;top:20%">
         <div id="talent_gallery" class="photoset-grid-lightbox" data-layout="13" style="visibility: hidden">
-            <img src="{% static 'professional_portfolio/images/singing_crop.png' %}" width="1280" height="550"
+            <img title="Wedding Performance" src="{% static 'professional_portfolio/images/singing_crop.png' %}" width="1280" height="550"
                  data-highres="{% static 'professional_portfolio/images/singing_crop.png' %}">
-            <img src="{% static 'professional_portfolio/images/wine_rack_thumb.png' %}" width="100" height="200"
+            <img title="Wine Rack made of reclaimed mahogany" src="{% static 'professional_portfolio/images/wine_rack_thumb.png' %}" width="100" height="200"
                  data-highres="{% static 'professional_portfolio/images/wine_rack_styled.png' %}">
-            <img src="{% static 'professional_portfolio/images/beer_thumbs_small.png' %}" width="100" height="200"
+            <img title="Lilikoi Pale Ale!" src="{% static 'professional_portfolio/images/beer_thumbs_small.png' %}" width="100" height="200"
                  data-highres="{% static 'professional_portfolio/images/beer_thumbs.png' %}">
-             <img src="{% static 'professional_portfolio/images/kabocha_c_small_dull.png' %}" width="100" height="200"
+             <img title="Kabocha or Japanese Pumpkin" src="{% static 'professional_portfolio/images/kabocha_c_small_dull.png' %}" width="100" height="200"
                  data-highres="{% static 'professional_portfolio/images/kabocha_c.png' %}">
         </div>
          </div>
@@ -341,6 +340,7 @@ _gaq.push(['_trackPageview']);
 <script src='{% static 'professional_portfolio/js/jquery-ui.min.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery.photoset-grid.min.js' %}'></script>
 <script src='{% static 'professional_portfolio/js/jquery.colorbox.js' %}'></script>
+<script src='{% static 'professional_portfolio/js/jquery.qtip.min.js' %}'></script>
 
 <script src="{% static 'professional_portfolio/js/init.js' %}"></script>
 {#<script src="{% static 'professional_portfolio/js/ajax_calls.js' %}"></script>#}
