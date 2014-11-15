@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -22,9 +21,9 @@ SECRET_KEY = 'tev!n5w^oz7w#gv@98o5y(y1$e4$lnu@xik_jn0ju(c7mb4lzv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -87,3 +86,8 @@ STATIC_URL = '/static/'
 #     os.path.join(BASE_DIR,  'templates'),
 # )
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')] #iterable of file system
+
+# STATICFILES_DIRS = ((os.path.join(BASE_DIR,'professional_portfolio')))
+                    # (os.path.join(BASE_DIR,'professional_portfolio/static/professional_portfolio/images')),
+                    # (os.path.join(BASE_DIR,'professional_portfolio/static/professional_portfolio/js'))
+

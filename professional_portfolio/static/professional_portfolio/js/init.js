@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     $(home).mouseover(function() {
-        $(this).effect('bounce', {distance:10}, 100);
+        $(this).effect('bounce', {distance:10}, 800);
     });
 
             $(home).qtip({
