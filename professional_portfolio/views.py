@@ -10,7 +10,8 @@ from django.shortcuts import render_to_response
 
 
 def index(request):
-    return render_to_response('professional_portfolio/index.html')
+    # return render_to_response('professional_portfolio/index.html')
+    return render_to_response('professional_portfolio/index_edit.html')
 
 
 def load_dcmd(request):

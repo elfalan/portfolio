@@ -191,6 +191,7 @@ smoothScroll.init({
 $(window).on('resize', function () {
 
     var content_text = $('.content_text');
+    var tab_text = $('.tab_text');
 
     var fontSize = content_text.css('font-size');
 
@@ -204,9 +205,56 @@ $(window).on('resize', function () {
 //        "ratio: " + ratio);
 
 
-   newFontSize = (70-(ratio*5)) + '%';
-    content_text.css("font-size",newFontSize);
+   var newContextFontSize = (70-(ratio*5)) + '%';
+    content_text.css("font-size",newContextFontSize);
+    var newTabFontSize = (110-(ratio*10)) + '%';
+    tab_text.css("font-size",newTabFontSize);
+     newTabFontSize = (200-(ratio*15)) + '%';
+    $('.tab_text_header').css("font-size",newTabFontSize);
 
+    if((1300 < screenwidth)&&(screenwidth < 1500)){
+    $('.gallery').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
+    $('.island_container').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
+            $('#cssmenu').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
+
+        }
+    else if((1100 < screenwidth)&&(screenwidth < 1300)){
+    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.8,0.8)");
+    $('.island_container').css("transform", "translate(-10%,-10%) scale(0.8,0.8)");
+    $('#cssmenu').css("transform", "translate(-10%,-5%) scale(0.8,0.8)");}
+
+    else if((1000 < screenwidth)&&(screenwidth < 1100)){
+    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
+    $('.island_container').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
+//    $('#cssmenu').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
+    }
+
+    else if((800 < screenwidth)&&(screenwidth < 1200)){
+    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");
+    $('.island_container').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");
+    $('#cssmenu').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");}
+
+    else if((600 < screenwidth)&&(screenwidth < 800)){
+    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.45,0.45)");
+    $('#talent_window').css("transform", "translate(-30%,-10%) scale(0.45,0.45)");}
+
+    else if((300 < screenwidth)&&(screenwidth < 600)){
+    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.4,0.4)");
+    $('#talent_window').css("transform", "translate(-35%,-10%) scale(0.4,0.4)");}
+
+//    else if(300 < screenwidth){
+//    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.3,0.3)");}
+
+//   if(screenwidth < 500){
+//    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.5,0.5)");
+//    }
+
+    else{
+        $('.gallery').css("transform", "scale(1.0,1.0)");
+        $('#cssmenu').css("transform", "scale(1.0,1.0)");
+    }
+//    var max_height = 90-(ratio*5) + '%';
+//        var max_width = 90-(ratio*5) + '%';
 
     $('#dcmd_gallery').photosetGrid({
         highresLinks: true,
@@ -220,6 +268,7 @@ $(window).on('resize', function () {
                 scalePhotos: true,
                 maxHeight: '90%',
                 maxWidth: '90%'
+
             });
         }
     });

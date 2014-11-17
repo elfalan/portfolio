@@ -7,9 +7,8 @@
     z-index: 999;
     background: rgba(255, 255, 255, 0.95);
     color: #fff;
-    border-radius: 0 0 5px 5px;
-    overflow: hidden;
-     height: 60px;
+     /*height: 60px;*/
+     height: 8%;
 }
 
 .name_header {
@@ -17,9 +16,10 @@
     /*margin: 5px auto;*/
     color: rgb(0, 152, 141);
     font: 60% / 1.5 Arial Rounded MT Bold;
-    font-size: 40px;
-    height:55px;
-
+    font-size: 110%;
+    /*font:40px;*/
+    /*height:55px;*/
+    height:100%;
 }
 
 
@@ -28,7 +28,7 @@
 
 .parallax__group {
     position: relative;
-    height: 500px; /*fallback for older browsers */
+    /*height: 500px; *//*fallback for older browsers */
     height: 100vh;
     z-index: 1;
     max-width: 100%;
@@ -95,36 +95,42 @@ body {
     padding: 0;
 }
 
-/*.slide_set {*/
-    /*position: relative;*/
-   /*font-size: 200%;*/
-/*}*/
 
 
 .tab_text {
     position: absolute;
     font: 60% / 1.5 Arial Narrow;
     text-align: justify;
-    font-size: 20px;
+    font-size: 105%;
     color: rgba(232, 253, 255, 0.64);
     left: 3%;
     top: 20%;
-    height:600px;
-    width:650px;
+    max-height:90%;
+    max-width:90%;
 }
 
 #tabs {
     /*text-align: justify;*/
     position: absolute;
-    font-size: 20px;
-    width: 750px;
-    height: 600px;
+    /*font-size: 20px;*/
+    font-size: 60%;
+    /*width: 750px;*/
+    /*height: 600px;*/
+    width:50%;
+    max-height:110%;
+    height:70%;
     background: rgb(71, 54, 194);
 
       -moz-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38);
 -webkit-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 }
+
+.tab_text_header{
+font-size:200%;
+color:rgba(255, 244, 43, 0.67)
+}
+
 .under{
     text-decoration: underline;
     color: rgba(255, 244, 43, 0.49);
@@ -133,28 +139,32 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 
 .gallery {
     position: absolute;
-    height:500px;
-    width:500px;
+    /*height:500px;*/
+    /*width:500px;*/
+    height:60%;
+    width:50%;
 }
 
 
 #aloha_text {
-    font: 60px / 1.5 Arial Rounded MT Bold;
+    font: 200% / 1.5 Arial Rounded MT Bold;
+    font-size:60px;
     color: rgba(255, 48, 0, 0.52);
 
 }#mahalo_text {
-    font: 40px / 1.5 Arial Rounded MT Bold;
+    font: 150% / 1.5 Arial Rounded MT Bold;
+    font-size:40px;
     color: rgba(170, 17, 29, 0.52);
 
 }
 .titles p {
-    font: 35px / 1.5 Arial;
+    font: 90% / 1.5 Arial;
     color: rgb(255, 255, 255);
     position:absolute; top:8%; left:5%;
 }
 .style_bar{
-    width:4px;
-    height:150px;
+    width:0.3%;
+    height:18%;
     background-color: white;
     position: absolute;top:0%; left:3%;
 }
@@ -162,7 +172,8 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 
 .content_text {
    font: 60% / 1.5 Arial Narrow;
-   font-size: 20px;
+   /*font-size: 20px;*/
+   font-size: 70%;
    color: rgba(251, 253, 255, 0.78);
    text-align: left;
 
@@ -198,17 +209,21 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
     top: 50%;
 }
 
+#skills_window{
+    height:40%;
+    width:50%;
+}
 /* style the groups
 --------------------------------------------- */
 
-#group1 {
-    z-index:0;
+/*#group1 {*/
+    /*z-index:0;*/
     /*background: url('images/napali2.jpeg');*/
-    background: url('images/napali_coast_clr.jpeg');
+    /*background: url('images/napali_coast_clr.jpeg');*/
     /*background: url('images/napali_art.png');*/
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+/*}*/
 
 #about {
     z-index: 0; /* slide under groups 1 and 3 */
@@ -325,7 +340,6 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
     top:50%;
    -ms-transform: scale(0.9,0.8); /* IE 9 */
     -webkit-transform: scale(0.9,0.8); /* Chrome, Safari, Opera */
-
 }
 #linkedin:hover{
     opacity: 1.0;
@@ -339,6 +353,9 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 }
 #gmail:hover{
     opacity: 1.0;
+}
+#chart{
+
 }
 
 
