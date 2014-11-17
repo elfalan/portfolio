@@ -222,12 +222,12 @@ $(window).on('resize', function () {
 //        alert("1405-1117");
         $('.gallery').css("transform", "translate(-10%,-10%) scale(0.8,0.8)");
         $('#cssmenu').css("transform", "scale(1.0,1.0)");
-       tab_text.css("font-size", "90%");
+       tab_text.css("font-size", "85%");
     }
 
     else if ((989 < screenwidth) && (screenwidth < 1117)) {
         $('.gallery').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
-       tab_text.css("font-size", "90%");
+       tab_text.css("font-size", "80%");
            }
 
     else if ((750 < screenwidth) && (screenwidth < 989)) {
@@ -249,7 +249,7 @@ $(window).on('resize', function () {
          tab_text.css("font-size", "70%");
         $('#cssmenu').css("transform", "scale(0.7,0.7)");
         $('.island').css("transform", "scale(0.2,0.2)");
-        $('.island_container').css("transform", "scale(0.2,0.2");
+        $('.island_container').css("max-width", "80%");
         content_text.css("font-size","50%");
 
     }
