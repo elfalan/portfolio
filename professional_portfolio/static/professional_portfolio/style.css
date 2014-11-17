@@ -118,12 +118,13 @@ body {
     /*height: 600px;*/
     width:50%;
     max-height:110%;
-    height:70%;
+    height:auto;
     background: rgb(71, 54, 194);
 
       -moz-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38);
 -webkit-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
+    overflow-y: hidden;
 }
 
 .tab_text_header{
@@ -160,7 +161,8 @@ color:rgba(255, 244, 43, 0.67)
 .titles p {
     font: 90% / 1.5 Arial;
     color: rgb(255, 255, 255);
-    position:absolute; top:8%; left:5%;
+    position:absolute; top:10%; left:5%;
+    /*transform:translate(0%,-10%);*/
 }
 .style_bar{
     width:0.3%;
