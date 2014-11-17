@@ -190,21 +190,22 @@ smoothScroll.init({
  */
 $(window).on('resize', function () {
 
-//$('.photoset-grid-lightbox').photosetGrid({
-//  highresLinks: true,
-//  rel: 'withhearts-gallery',
-//  gutter: '2px',
-//
-//  onComplete: function(){
-//    $('.photoset-grid-lightbox').attr('style', '');
-//    $('.photoset-grid-lightbox a').colorbox({
-//      photo: true,
-//      scalePhotos: true,
-//      maxHeight:'90%',
-//      maxWidth:'90%'
-//    });
-//  }
-//});
+    var content_text = $('.content_text');
+
+    var fontSize = content_text.css('font-size');
+
+    var screenheight = parseInt($(window).height());
+    var screenwidth = parseInt($(window).width());
+    var ratio = Math.floor(parseFloat((22/screenwidth)*100));
+
+//    alert("font: " + fontSize.toString()+ "\n" +
+//        "height" + screenheight.toString() + "\n" +
+//        "width" + screenwidth.toString() + "\n" +
+//        "ratio: " + ratio);
+
+
+   newFontSize = (70-(ratio*5)) + '%';
+    content_text.css("font-size",newFontSize);
 
 
     $('#dcmd_gallery').photosetGrid({
@@ -256,5 +257,7 @@ $(window).on('resize', function () {
 
 
     });
+
+
 });
 
