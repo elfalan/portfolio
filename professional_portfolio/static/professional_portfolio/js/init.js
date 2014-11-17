@@ -186,10 +186,11 @@ smoothScroll.init({
 });
 
 /************************
- * picture gallery
+ * picture gallery and text
  */
 $(window).on('resize', function () {
 
+    //scaling of text and gallery elements
     var content_text = $('.content_text');
     var tab_text = $('.tab_text');
 
@@ -199,63 +200,68 @@ $(window).on('resize', function () {
     var screenwidth = parseInt($(window).width());
     var ratio = Math.floor(parseFloat((22/screenwidth)*100));
 
-//    alert("font: " + fontSize.toString()+ "\n" +
-//        "height" + screenheight.toString() + "\n" +
-//        "width" + screenwidth.toString() + "\n" +
-//        "ratio: " + ratio);
-
 
    var newContextFontSize = (70-(ratio*5)) + '%';
     content_text.css("font-size",newContextFontSize);
     var newTabFontSize = (110-(ratio*10)) + '%';
+
+//    change tab content text
     tab_text.css("font-size",newTabFontSize);
+    $('.tab_anchor').css("font-size",newTabFontSize);
+
+//    change header text
      newTabFontSize = (200-(ratio*15)) + '%';
     $('.tab_text_header').css("font-size",newTabFontSize);
 
-    if((1300 < screenwidth)&&(screenwidth < 1500)){
+
+
+    if((1405 < screenwidth)&&(screenwidth < 1645)){
     $('.gallery').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
-    $('.island_container').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
-            $('#cssmenu').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
+                    $('#cssmenu').css("transform","scale(1.0,1.0)");
 
         }
-    else if((1100 < screenwidth)&&(screenwidth < 1300)){
+    else if((1117 < screenwidth)&&(screenwidth < 1405)){
+//        alert("2nd");
     $('.gallery').css("transform", "translate(-10%,-10%) scale(0.8,0.8)");
-    $('.island_container').css("transform", "translate(-10%,-10%) scale(0.8,0.8)");
-    $('#cssmenu').css("transform", "translate(-10%,-5%) scale(0.8,0.8)");}
+                $('#cssmenu').css("transform","scale(1.0,1.0)");
+}
 
-    else if((1000 < screenwidth)&&(screenwidth < 1100)){
+    else if((989 < screenwidth)&&(screenwidth < 1117)){
     $('.gallery').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
-    $('.island_container').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
-//    $('#cssmenu').css("transform", "translate(-10%,-10%) scale(0.7,0.7)");
+                $('#cssmenu').css("transform","scale(1.0,1.0)");
+}
+
+    else if((750 < screenwidth)&&(screenwidth < 989)){
+        alert("ipad size");
+    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.65,0.65)");
+        $('#talent_window').css("transform", "translate(-15%,-10%) scale(0.65,0.65)");
+            $('#cssmenu').css("transform","scale(1.0,1.0)");
+        $('.island').css("transform", "scale(0.3,0.3)")
+
+}
+
+    else if((350 < screenwidth)&&(screenwidth < 750)){
+        alert("iphone size");
+    $('.gallery').css("transform", "translate(-25%,-10%) scale(0.4,0.4)");
+    $('#talent_window').css("transform", "translate(-30%,-10%) scale(0.45,0.45)");
+    $('.tab_anchor').css("font-size","50%");
+    $('#cssmenu').css("transform","scale(0.7,0.7)");
+        $('.island').css("transform", "scale(0.2,0.2)");
+        $('.island_container').css("transform","scale(0.2,0.2");
+
     }
 
-    else if((800 < screenwidth)&&(screenwidth < 1200)){
-    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");
-    $('.island_container').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");
-    $('#cssmenu').css("transform", "translate(-15%,-10%) scale(0.5,0.5)");}
-
-    else if((600 < screenwidth)&&(screenwidth < 800)){
-    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.45,0.45)");
-    $('#talent_window').css("transform", "translate(-30%,-10%) scale(0.45,0.45)");}
-
-    else if((300 < screenwidth)&&(screenwidth < 600)){
-    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.4,0.4)");
-    $('#talent_window').css("transform", "translate(-35%,-10%) scale(0.4,0.4)");}
-
-//    else if(300 < screenwidth){
-//    $('.gallery').css("transform", "translate(-15%,-10%) scale(0.3,0.3)");}
-
-//   if(screenwidth < 500){
-//    $('.gallery').css("transform", "translate(-10%,-10%) scale(0.5,0.5)");
-//    }
-
-    else{
+    else if(screenwidth < 350){
+    $('.gallery').css("transform", "translate(-25%,-10%) scale(0.3,0.3)");
+    $('#talent_window').css("transform", "translate(-35%,-10%) scale(0.3,0.3)");
+        alert("small window");
+    }
+    else if(screenwidth > 1645){
         $('.gallery').css("transform", "scale(1.0,1.0)");
-        $('#cssmenu').css("transform", "scale(1.0,1.0)");
     }
-//    var max_height = 90-(ratio*5) + '%';
-//        var max_width = 90-(ratio*5) + '%';
 
+
+    //render picture galleries
     $('#dcmd_gallery').photosetGrid({
         highresLinks: true,
         rel: 'dcmd_gallery',
