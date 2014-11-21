@@ -20,8 +20,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
   /*width: 470px;*/
-  width: 450px;
-    /*height:65%;*/
+  width: 430px;
   /*max-width: 30%;*/
   /*max-height: 60%;*/
 
@@ -36,7 +35,7 @@
   background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
   background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
-  padding: 5px 10px;
+  padding: 0px 5px 5px 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;

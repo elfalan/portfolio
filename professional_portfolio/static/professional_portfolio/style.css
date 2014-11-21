@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     z-index: 999;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(255, 255, 255);
     color: #fff;
      height: 70px;
      /*height: 8%;*/
@@ -109,6 +109,7 @@ body {
     max-width:90%;
 }
 
+
 #tabs {
     /*text-align: justify;*/
     position: absolute;
@@ -119,7 +120,7 @@ body {
     width:50%;
     max-height:110%;
     height:auto;
-    background: rgb(71, 54, 194);
+    background: rgba(21, 21, 21, 0.62);
 
       -moz-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38);
 -webkit-box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
@@ -129,12 +130,14 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 
 .tab_text_header{
 font-size:200%;
-color:rgba(255, 244, 43, 0.67)
+/*color:rgba(255, 244, 43, 0.67)*/
+color: rgba(80, 117, 189, 0.67)
 }
 
 .under{
     text-decoration: underline;
-    color: rgba(255, 244, 43, 0.49);
+    /*color: rgba(255, 244, 43, 0.49);*/
+    color: rgba(170, 228, 252, 0.49);
 }
 
 
@@ -167,7 +170,7 @@ color:rgba(255, 244, 43, 0.67)
 .style_bar{
     width:0.3%;
     height:18%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;top:0%; left:3%;
 }
 
@@ -178,6 +181,7 @@ color:rgba(255, 244, 43, 0.67)
    font-size: 70%;
    color: rgba(251, 253, 255, 0.78);
    text-align: left;
+    z-index:5;
 
 }
 
@@ -238,7 +242,7 @@ color:rgba(255, 244, 43, 0.67)
 #work {
     z-index: 0; /* slide over group 2 and 4 */
     /*background: rgb(77, 120, 204);*/
- background: url('images/blueprint.png');
+ background: url('images/Work.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -246,7 +250,7 @@ color:rgba(255, 244, 43, 0.67)
 #talents {
     z-index: 0; /* slide under group 3 and 5 */
     /*background: rgb(255, 155, 79);*/
-     background: url('images/orange.png');
+     background: url('images/gears.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -281,20 +285,22 @@ color:rgba(255, 244, 43, 0.67)
 
     transform: scale(0.4,0.4);
 }
-#big_island{
+#big_island:before{
     content:url('images/islands/big_island_c.png');
         }
-#maui_molokai{
+#maui_molokai:before{
     content:url('images/islands/maui_molokai_c.png');
         }
-#oahu{
+#oahu:before{
     content:url('images/islands/oahu_c.png');
         }
-#kauai{
+#kauai:before{
     content:url('images/islands/kauai_c.png');
         }
 
-
+.island_container{
+    z-index:4;
+}
 
 #github_logo{
     content: url('images/GitHub_Logo.png');
@@ -334,7 +340,7 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 }
 
-#linkedin{
+#linkedin:before{
     content: url('images/linkedin_logo.png');
     opacity: 0.7;
     position: absolute;
@@ -346,7 +352,7 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
 #linkedin:hover{
     opacity: 1.0;
 }
-#gmail{
+#gmail:before{
     content: url('images/gmaillogo.png');
     opacity: 0.7;
     position: absolute;
@@ -357,7 +363,12 @@ box-shadow: 10px 10px 5px rgba(27, 27, 27, 0.38) ;
     opacity: 1.0;
 }
 #chart{
-
+ -ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
+}
+#dcmd_window{
+     -ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
 }
 
 

@@ -14,9 +14,9 @@ $(document).ready(function () {
         style: {classes: 'qtip-tipsy' }
     });
 
-    $(home).mouseover(function () {
-        $(this).effect('bounce', {distance: 10}, 800);
-    });
+//    $(home).mouseover(function () {
+//        $(this).effect('bounce', {distance: 10}, 400);
+//    });
 
     $(home).qtip({
         content: {
@@ -28,7 +28,8 @@ $(document).ready(function () {
 
 //    initialize project windows
     $('#dcmd_window').hide();
-    $('#academic_window').hide();
+    $('#tmr_window').hide();
+    $('#scheduler_window').hide();
     $('#skills_window').show();
     $('#talent_window').show();
 
@@ -95,7 +96,8 @@ function enableWaypoints() {
 //tab animation and gallery displays
 $('#tab1_anchor').click(function () {
 
-    $('#academic_window').hide();
+ $('#tmr_window').hide();
+    $('#scheduler_window').hide();
     $('#dcmd_window').hide();
     $('#skills_window').fadeIn(600);
 
@@ -105,7 +107,8 @@ $('#tab1_anchor').click(function () {
 $('#tab2_anchor').click(function () {
 
     $('#skills_window').hide();
-    $('#academic_window').hide();
+    $('#tmr_window').hide();
+    $('#scheduler_window').hide();
     $('#dcmd_window').fadeIn(600);
 
     $(window).trigger('resize');
@@ -117,7 +120,18 @@ $('#tab3_anchor').click(function () {
 
     $('#skills_window').hide();
     $('#dcmd_window').hide();
-    $('#academic_window').fadeIn(600);
+    $('#scheduler_window').hide();
+    $('#tmr_window').fadeIn(600);
+
+    $(window).trigger('resize');
+
+});
+$('#tab4_anchor').click(function () {
+
+    $('#skills_window').hide();
+    $('#dcmd_window').hide();
+    $('#tmr_window').hide();
+    $('#scheduler_window').fadeIn(600);
 
     $(window).trigger('resize');
 
@@ -189,7 +203,14 @@ smoothScroll.init({
  */
 $(window).on('resize', function () {
 
+    //reset certain variables on resize
+    var name_header = $('.name_header');
+    name_header.css("font-size","100%");
+    var islands = $('.island');
+    islands.css("transform", "scale(0.4,0.4)");
+
     //scaling of text and gallery elements
+
     var content_text = $('.content_text');
     var tab_text = $('.tab_text');
 
@@ -199,12 +220,14 @@ $(window).on('resize', function () {
     var ratio = Math.floor(parseFloat((22 / screenwidth) * 100));
 
 
-    var newContextFontSize = (70 - (ratio * 5)) + '%';
+    var newContextFontSize = (70 - (ratio * 8)) + '%';
     content_text.css("font-size", newContextFontSize);
-    var newTabFontSize = (110 - (ratio * 10)) + '%';
+
 
 //    change tab content text
+    var newTabFontSize = (110 - (ratio * 15)) + '%';
     tab_text.css("font-size", newTabFontSize);
+    newTabFontSize = (90 - (ratio * 15)) + '%';
     tab_anchor.css("font-size", newTabFontSize);
 
 //    change header text
@@ -212,10 +235,12 @@ $(window).on('resize', function () {
     $('.tab_text_header').css("font-size", newTabFontSize);
 
 
+
     if ((1405 < screenwidth) && (screenwidth < 1645)) {
 //        alert("1645-1450");
-        $('.gallery').css("transform", "translate(-10%,-5%) scale(0.9,0.9)");
+        $('.gallery').css("transform", "translate(-5%,-5%) scale(0.9,0.9)");
         $('#cssmenu').css("transform", "scale(1.0,1.0)");
+        $('#skills_window').css("transform", "translate(-5%,10%");
 
     }
     else if ((1117 < screenwidth) && (screenwidth < 1405)){
@@ -235,32 +260,39 @@ $(window).on('resize', function () {
         $('.gallery').css("transform", "translate(-15%,-10%) scale(0.65,0.65)");
         $('#talent_window').css("transform", "translate(-15%,-10%) scale(0.65,0.65)");
         $('#cssmenu').css("transform", "scale(1.0,1.0)");
-        $('.island').css("transform", "scale(0.3,0.3)");
+        islands.css("transform", "scale(0.3,0.3)");
         $('.tab_text_header').css("font-size", "110%");
          tab_text.css("font-size", "80%");
+         tab_anchor.css("font-size", "50%");
+
 
     }
 
-    else if ((350 < screenwidth) && (screenwidth < 750)) {
-//        alert("iphone size");
-        $('.gallery').css("transform", "translate(-25%,-10%) scale(0.45,0.45)");
-        $('#talent_window').css("transform", "translate(-30%,-10%) scale(0.45,0.45)");
+    else if ((600 < screenwidth) && (screenwidth < 750)) {
+//        alert('android tab');
+
+        $('.gallery').css("transform", "translate(-25%,-20%) scale(0.43,0.5)");
+        $('#talent_window').css("transform", "translate(-30%,-15%) scale(0.45,0.5)");
         tab_anchor.css("font-size", "50%");
          tab_text.css("font-size", "70%");
         $('#cssmenu').css("transform", "scale(0.7,0.7)");
-        $('.island').css("transform", "scale(0.2,0.2)");
-        $('.island_container').css("max-width", "80%");
-        content_text.css("font-size","50%");
+        islands.css("transform", "scale(0.2,0.2)");
+        $('.island_container').css("max-width", "60%");
+}
 
-    }
+    else if (screenwidth < 600) {
+        alert("Hello! You are at Jesse Elfalan's Portfolio.  Due to some graphics and animation this Site is best viewed on a Desktop sized resolution. Thank You!");
+        $('.gallery').css("transform", "translate(-30%,-25%) scale(0.35,0.4)");
+        $('#talent_window').css("transform", "translate(-35%,-20%) scale(0.4,0.4)");
+            $('#cssmenu').css("transform", "scale(0.6,0.6) translate(-20%,-10%)");
+        name_header.css("font-size","80%");
+                islands.css("transform","scale(0.15,0.15)");
 
-    else if (screenwidth < 350) {
-        $('.gallery').css("transform", "translate(-25%,-10%) scale(0.3,0.3)");
-        $('#talent_window').css("transform", "translate(-35%,-10%) scale(0.3,0.3)");
-        alert("small window");
+
     }
     else if (screenwidth > 1645) {
         $('.gallery').css("transform", "scale(1.0,1.0)");
+
     }
 
 
@@ -283,13 +315,28 @@ $(window).on('resize', function () {
         }
     });
 
-    $('#academic_gallery').photosetGrid({
+    $('#tmr_gallery').photosetGrid({
+        highresLinks: true,
+        rel: 'tmr_gallery',
+        gutter: '2px',
+
+        onComplete: function () {
+            $('#tmr_gallery').attr('style', '');
+            $('.photoset-grid-lightbox a').colorbox({
+                photo: true,
+                scalePhotos: true,
+                maxHeight: '90%',
+                maxWidth: '90%'
+            });
+        }
+    });
+    $('#scheduler_gallery').photosetGrid({
         highresLinks: true,
         rel: 'academic_gallery',
         gutter: '2px',
 
         onComplete: function () {
-            $('#academic_gallery').attr('style', '');
+            $('#scheduler_gallery').attr('style', '');
             $('.photoset-grid-lightbox a').colorbox({
                 photo: true,
                 scalePhotos: true,
@@ -319,4 +366,5 @@ $(window).on('resize', function () {
 
 
 });
+
 
